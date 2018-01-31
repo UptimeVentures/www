@@ -10,6 +10,13 @@ module.exports = {
     siteUrl: 'https://www.uptime.ventures',
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content`,
+        name: 'content',
+      },
+    },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
