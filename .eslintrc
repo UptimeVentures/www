@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "globals": {
+    "graphql": true
+  },
+  "extends": [
+    "standard",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "space-before-function-paren": 0,
+    "comma-dangle": ["error", "always-multiline"],
+    "react/prop-types": 0
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

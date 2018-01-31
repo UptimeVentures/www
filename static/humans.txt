@@ -1,0 +1,7 @@
+/* TEAM */
+Designed and developed by the Uptime Ventures Digital Team
+https://www.uptime.ventures
+
+/* SITE */
+Powered by Gatsby
+https://www.gatsbyjs.org/
