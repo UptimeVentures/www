@@ -45,7 +45,7 @@ module.exports = {
     },
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',
-    'gatsby-plugin-glamor',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-typography',
