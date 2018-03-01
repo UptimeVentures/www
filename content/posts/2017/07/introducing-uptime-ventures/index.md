@@ -1,10 +1,9 @@
 ---
 title: Introducing Uptime Ventures
-slug: introducing-uptime-ventures
 author: 'Nicholas Young'
 layout: post
 draft: false 
-date: '2017-08-02'
+date: 2017-08-02
 image: share.jpg
 keywords:
   - gatsbyjs

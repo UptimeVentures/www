@@ -1,19 +1,22 @@
-// @flow
-
-// Copyright 2018 Uptime Ventures, Ltd. All rights reserved.
+/**
+ * Copyright 2018 Uptime Ventures, Ltd.
+ * All rights reserved.
+ *
+ * @flow
+ */
 
 import React from 'react'
 import Helmet from 'react-helmet'
 
 import 'normalize.css'
-import 'typeface-oxygen'
+import 'typeface-pt-sans'
+import 'typeface-lato'
 
 export default function Layout({ children }) {
   return (
     <div>
       <Helmet
         title="Uptime Ventures"
-        titleTemplate="%s | Uptime Ventures"
         meta={[
           // Leave as @UptimeVentures for now,
           // at least until after launch.

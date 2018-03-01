@@ -1,6 +1,9 @@
-// @flow
-
-// Copyright 2018 Uptime Ventures, Ltd. All rights reserved.
+/**
+ * Copyright 2018 Uptime Ventures, Ltd.
+ * All rights reserved.
+ *
+ * @flow
+ */
 
 module.exports = {
   siteMetadata: {

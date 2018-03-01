@@ -1,13 +1,16 @@
-// @flow
-
-// Copyright 2018 Uptime Ventures, Ltd. All rights reserved.
+/**
+ * Copyright 2018 Uptime Ventures, Ltd.
+ * All rights reserved.
+ *
+ * @flow
+ */
 
 import Typography from 'typography'
 import CodePlugin from 'typography-plugin-code'
 
 const options = {
-  headerFontFamily: ['oxygen', 'sans-serif'],
-  bodyFontFamily: ['oxygen', 'sans-serif'],
+  headerFontFamily: ['pt-sans', 'sans-serif'],
+  bodyFontFamily: ['lato', 'sans-serif'],
   baseFontSize: '16px',
   baseLineHeight: 1.5,
   blockMarginBottom: 0.65,

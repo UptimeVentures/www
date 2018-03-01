@@ -5,4 +5,4 @@
  * @flow
  */
 
-module.exports = `https://www.uptime.ventures`
+export { default } from './Navigation'
