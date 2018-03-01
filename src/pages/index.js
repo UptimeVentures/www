@@ -21,7 +21,10 @@ const Headline = styled.div`
   justify-content: center;
 
   h2 {
-    font-size: 4em;
+    font-size: 2em;
+    @media(min-width: 800px) {
+      font-size: 4em;
+    }
   }
 
   p {
