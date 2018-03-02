@@ -16,9 +16,15 @@ import toAbsolute from '../util/toAbsolute'
 
 const Headline = styled.h1`
   text-align: center;
-  font-size: 3em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1.7em;
+  @media(min-width: 700px) {
+    font-size: 2.5em;
+  }
+  @media(min-width: 960px) {
+    font-size: 3em;
+  }
 `
 
 const Published = styled.time`
