@@ -18,7 +18,10 @@ const Link = styled(GLink)`
 `
 
 const Headline = styled.h3`
-  font-size: 2em;
+  font-size: 1.5em;
+  @media(max-width: 800px) {
+    font-size: 2em;
+  }
 `
 
 const PostPreview = ({ fields, frontmatter, excerpt }) => (
