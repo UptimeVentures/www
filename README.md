@@ -9,15 +9,15 @@ This repo contains the website assets for
 
 ### Getting Started
 
-To begin, install all dependencies like usual. This project is configured to use `npm@5` by default, but you could use Yarn.
+To begin, install all dependencies like usual. This project is configured to use `yarn` by default. `npm`, wonderful as it is, doesn't cooperate with Gatsby all that well.
 
-Once installation is complete, `npm start` will launch a development server on [`localhost:8000`](http://localhost:8000).
+Once installation is complete, `yarn start` will launch a development server on [`localhost:8000`](http://localhost:8000).
 
 ### Building for Production
 
-When you're finished editing, `npm run build` will compile source files `src/`, combined with content from source directories (above) and output the built site in `public/`.
+When you're finished editing, `yarn build` will compile source files `src/`, combined with content from source directories (above) and output the built site in `public/`.
 
-This site is automatically built by Netlify. Take a look at `package.json` for details.
+This site is automatically built by Netlify. Take a look at `package.json` and `netlify.toml` for details.
 
 ## License
 
