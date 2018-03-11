@@ -13,7 +13,7 @@ keywords:
   - view source
 draft: false 
 ---
-As artists mature, one critical phase is growing comfortable with showing our work. Despite the fact that artists who design for web audiences hit this stage even faster than most, with an incoming mix of criticism on both artistic choice and functional attributes, the truth is I've been uncomfortable with this concept for years.
+As artists mature, a critical phase is growing comfortable with showing our work. Despite the fact that artists who design for web audiences hit this stage even faster than most, with an incoming mix of criticism on both artistic choice and functional attributes, the truth is I've been uncomfortable with this concept for years.
 
 I haven't necessarily shied away from it, though. Releasing once-internal code as open source was critical in my past work, and continues to be a priority here at [Uptime Ventures.][uv] Still, I believe there is more we can do. With the rise of developer quickstart programs, it feels like knowledge is to be extracted and offered for sale.
 
@@ -21,7 +21,7 @@ As a senior consultant, I've concerned how this industry trend plays against a b
 
 ## Show Your Work
 
-Anecdotally, experiences in the classroom has taught me how, from the teacher's desk, it appears that students trained to display and explain their work from the onset are most likely to find a career in design. Letting a trusted advisor or fellow student in on how your process operates is a terrifying prospect for most, but it often dispels confusion and opens your mind to fresh possibilities. Some designers even invite collaborators in shortly after the idea is formed. This gradual exposure of ideas to real-world constraints is often described as "[open design][open-design]."
+Anecdotally, experiences in the classroom have taught me, from the teacher's desk, it appears that students who prepare to display and explain their work from the onset are most likely to find a career in design. Letting a trusted advisor or friend in on how your process operates is a terrifying prospect for most, but it often dispels confusion and opens your mind to fresh possibilities. Some designers even invite collaborators in shortly after the idea is formed. This gradual exposure of ideas to real-world constraints is often described as "[open design][open-design]."
 
 I'm far from the only one to write on this topic. The same idea has been covered in [Basecamp's *Signal vs. Noise* blog][svn], and Brad Frost again mentioned the concept in a post explaining how the web presence of [Greater Pittsburgh Community Food Bank was designed "in the open" as well.][frost] Both of these posts are bookmarked, so when I need inspiration or courage, it's on tap.
 
