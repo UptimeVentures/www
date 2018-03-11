@@ -40,7 +40,7 @@ Since I began developing for web audiences in the mid-90's, change has been the 
 
 Open binary formats empower this brand of radical market disruption, [and erase Western bias in critical systems.][tom-dale-w]
 
-Sounds good, right? There's one more hurdle we must clear: developer experience. Last year, SitePoint declared, ["Modern JavaScript Development is Hard"][sitepoint]&mdash; and they're right!&mdash; I've watched developers struggle to understand essential front-end tools even before the dawn of "modern" JavaScript. Yet, despite mounting evidence, some will argue opaque binaries are harmful.
+Sounds good, right? There's one more hurdle we must clear: developer experience. Last year, SitePoint declared, ["Modern JavaScript Development is Hard"][sitepoint]&mdash; and they're right!&mdash; I've watched developers struggle to understand essential front-end tools even before the dawn of "modern" JavaScript. Yet, despite mounting evidence, some will argue binaries violate existing best practices, and are thus harmful.
 
 Can we resolve this final concern by applying principals of open design?
 
