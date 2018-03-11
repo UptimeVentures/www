@@ -8,6 +8,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
@@ -27,10 +28,10 @@ const Headline = styled.h1`
   }
 `
 
-const Published = styled.time`
+const Meta = styled.div`
   margin: 1.5em auto 3em auto;
   text-align: center;
-  display: block;
+  line-height: 1.7em;
 `
 
 const PostContents = styled.div`
@@ -47,7 +48,7 @@ export default function PostTemplate({ data }) {
     meta: { site: { host } },
     post: {
       fields: { slug },
-      frontmatter: { title, date, rawDate, keywords, image },
+      frontmatter: { title, date, rawDate, keywords, image, author },
       excerpt,
       html,
     },
@@ -119,7 +120,9 @@ export default function PostTemplate({ data }) {
       <Navigation/>
       <Content>
         <Headline>{title}</Headline>
-        <Published dateTime={rawDate}>{date}</Published>
+        <Meta>
+          Published on <time dateTime={rawDate}>{date}</time>. Authored by {author}.
+        </Meta>
         <PostContents
           dangerouslySetInnerHTML={{ __html: html }}
         />
@@ -141,6 +144,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         rawDate: date
         keywords
+        author
       }
       fields {
         slug
