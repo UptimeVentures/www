@@ -20,6 +20,14 @@ const Image = styled.img`
   max-width: 100%;
   position: relative;
   z-index: 1;
+  @media(min-width: 960px) {
+    transition: all .2s ease-in-out;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    &:hover {
+      transform: scale(1.010);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+  }
 `
 
 const FeaturedImage = ({ src, alt, caption, url }) => (
