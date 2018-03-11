@@ -12,6 +12,7 @@ import Helmet from 'react-helmet'
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
 import PageContent from '../components/Content'
+import SharePanel from '../components/SharePanel'
 import FeaturedImage from '../components/FeaturedImage'
 import toAbsolute from '../util/toAbsolute'
 
@@ -29,7 +30,7 @@ const Headline = styled.h1`
 `
 
 const Meta = styled.div`
-  margin: 1.5em auto 3em auto;
+  margin: 1.5em auto 1.5em auto;
   text-align: center;
   line-height: 1.7em;
 `
@@ -123,6 +124,7 @@ export default function PostTemplate({ data }) {
         <Meta>
           Published on <time dateTime={rawDate}>{date}</time> / Authored by {author}
         </Meta>
+        <SharePanel title={title} url={canonical}/>
         {hasFeature ? (
           <FeaturedImage
             {...hasFeature.responsiveResolution}
