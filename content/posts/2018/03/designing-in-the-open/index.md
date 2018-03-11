@@ -14,7 +14,7 @@ As artists mature, a critical phase is growing comfortable with showing our work
 
 I haven't necessarily shied away from it, though. Releasing once-internal code as open source was critical in my past work, and continues to be a priority here at [Uptime Ventures.][uv] Still, I believe there is more we can do. With the rise of developer quickstart programs, it feels like knowledge is to be extracted and offered for sale.
 
-As a senior consultant, I've concerned how this industry trend plays against a backdrop of increasingly powerful (and accessible) tools that are accelerating the pace of software development.
+As a senior consultant, I'm concerned how this industry trend plays against a backdrop of increasingly powerful (and accessible) tools that are accelerating the pace of software development.
 
 ## Show Your Work
 
