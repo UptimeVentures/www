@@ -121,7 +121,7 @@ export default function PostTemplate({ data }) {
       <Content>
         <Headline>{title}</Headline>
         <Meta>
-          Published on <time dateTime={rawDate}>{date}</time>. Authored by {author}.
+          Published on <time dateTime={rawDate}>{date}</time> / Authored by {author}
         </Meta>
         {hasFeature ? (
           <FeaturedImage
