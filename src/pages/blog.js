@@ -29,6 +29,8 @@ export default function BlogPage({ data }) {
     <Page>
       <Helmet
         title="Blog"
+        titleTemplate="%s | Uptime Ventures"
+        description="Inspiration, news, and education from Uptime Ventures."
       />
       <Navigation/>
       <Content>
