@@ -11,6 +11,8 @@ module.exports = {
     byline: 'Security with convenience',
     email: 'hello@uptime.ventures',
     siteUrl: 'https://www.uptime.ventures',
+    feedTitle: 'Uptime Ventures Blog',
+    feedDescription: 'Inspiration, news, and education from Uptime Ventures.',
   },
   plugins: [
     {
@@ -75,5 +77,55 @@ module.exports = {
     'gatsby-plugin-react-next',
     'gatsby-plugin-catch-links',
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title: feedTitle
+                description: feedDescription
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            query: `
+              {
+                allMarkdownRemark(
+                  filter: {
+                    fileAbsolutePath: { regex: "/posts/" }
+                    frontmatter: { draft: { ne: true } }
+                  }
+                  sort: {
+                    order: DESC
+                    fields: [frontmatter___date]
+                  }
+                ) {
+                  edges {
+                    node {
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        title
+                        date
+                      }
+                      excerpt
+                      html
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/blog/rss.xml',
+          },
+        ]
+      },
+    },
   ]
 }
