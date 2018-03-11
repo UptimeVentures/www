@@ -92,7 +92,7 @@ function slashify(slug) {
     slug = '/' + slug
   }
 
-  if (slug.charAt(slug.length -1) !== '/') {
+  if (slug.charAt(slug.length - 1) !== '/') {
     slug = slug + '/'
   }
 
