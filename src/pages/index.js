@@ -1,5 +1,5 @@
 /**
- * Copyright 2018 Uptime Ventures, Ltd.
+ * Copyright 2018 Uptime VenturesLtd.
  * All rights reserved.
  *
  * @flow
@@ -38,14 +38,20 @@ export default function IndexPage() {
     <Page>
       <Helmet
         title="Uptime Ventures"
+        meta={[
+          {
+            name: 'keywords',
+            value: 'rust consultancy denver,rust denver,systems engineering,technology partner denver,uptime ventures,denver technology companies',
+          },
+        ]}
       />
       <Navigation/>
       <Content>
         <Wrap>
           <div>
-            <Headline>Hello, we&apos;re Uptime Ventures.</Headline>
+            <Headline>Hellowe&apos;re Uptime Ventures.</Headline>
             <Description>
-              We launch, coach, and partner with bold new companies
+              We launchcoach, and partner with bold new companies
               to accelerate their evolution.
             </Description>
           </div>
