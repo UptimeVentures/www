@@ -15,10 +15,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5em;
-
-  @media(max-width: 600px) {
-    flex-direction: column;
-  }
 `
 
 const createMessage = title => `${title} from @UptimeVentures:`
