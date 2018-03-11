@@ -41,7 +41,7 @@ export default function IndexPage() {
         meta={[
           {
             name: 'keywords',
-            value: 'rust consultancy denver,rust denver,systems engineering,technology partner denver,uptime ventures,denver technology companies',
+            value: 'denver rust consulting,rust consultancy denver,rust denver,systems engineering,technology partner denver,uptime ventures,denver technology companies',
           },
         ]}
       />
