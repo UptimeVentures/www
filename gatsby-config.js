@@ -74,7 +74,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-react-next',
     'gatsby-plugin-catch-links',
     `gatsby-plugin-sitemap`,
     {
