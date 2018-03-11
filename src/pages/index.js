@@ -49,9 +49,9 @@ export default function IndexPage() {
       <Content>
         <Wrap>
           <div>
-            <Headline>Hellowe&apos;re Uptime Ventures.</Headline>
+            <Headline>Hello we&apos;re Uptime Ventures.</Headline>
             <Description>
-              We launchcoach, and partner with bold new companies
+              We launch, coach, and partner with bold new companies
               to accelerate their evolution.
             </Description>
           </div>
