@@ -11221,6 +11221,10 @@ typeface-pt-sans@0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-pt-sans/-/typeface-pt-sans-0.0.54.tgz#b6d5a409b2ee618b961f1116b86c421a18a7efd0"
 
+typeface-pt-serif@0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-pt-serif/-/typeface-pt-serif-0.0.54.tgz#139269d821f44c675bd3713169808cfc51a07d9e"
+
 typography-normalize@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.14.0.tgz#1d77c1fe2aaf4a51b3673c4c85c85a65a2d4b573"

@@ -6,11 +6,19 @@
  */
 
 import React from 'react'
+import styled from 'styled-components'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
 import Content from '../components/Content'
 import PostPreview from '../components/PostPreview'
+
+const Item = styled.div`
+  margin-bottom: 2em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
 
 export default function BlogPage({ data }) {
   const posts = data.posts
@@ -20,7 +28,11 @@ export default function BlogPage({ data }) {
     <Page>
       <Navigation/>
       <Content>
-        {posts.map((p, i) => <PostPreview {...p} key={i}/>)}
+        {posts.map((p, i) => (
+          <Item>
+            <PostPreview {...p} key={i}/>
+          </Item>
+        ))}
       </Content>
     </Page>
   )

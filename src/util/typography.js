@@ -9,7 +9,7 @@ import Typography from 'typography'
 import CodePlugin from 'typography-plugin-code'
 
 const options = {
-  headerFontFamily: ['pt-sans', 'sans-serif'],
+  headerFontFamily: ['lato', 'sans-serif'],
   bodyFontFamily: ['lato', 'sans-serif'],
   baseFontSize: '16px',
   baseLineHeight: 1.5,

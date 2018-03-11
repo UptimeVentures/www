@@ -24,6 +24,11 @@ const Headline = styled.h3`
   }
 `
 
+const Preview = styled.p`
+  font-family: "PT Serif", serif;
+  font-size: 1em;
+`
+
 const PostPreview = ({ fields, frontmatter, excerpt }) => (
   <Container>
     {frontmatter.title ? (
@@ -32,7 +37,7 @@ const PostPreview = ({ fields, frontmatter, excerpt }) => (
       </Link>
     ) : undefined}
     {excerpt ? (
-      <p dangerouslySetInnerHTML={{ __html: excerpt }}/>
+      <Preview dangerouslySetInnerHTML={{ __html: excerpt }}/>
     ) : undefined}
   </Container>
 )

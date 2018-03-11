@@ -9,8 +9,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import 'normalize.css'
-import 'typeface-pt-sans'
 import 'typeface-lato'
+import 'typeface-pt-serif'
 
 export default function Layout({ children }) {
   return (

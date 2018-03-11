@@ -34,7 +34,8 @@ const Published = styled.time`
 `
 
 const PostContents = styled.div`
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Serif", serif;
+  font-size: 1.1em;
 `
 
 const Content = styled(PageContent)`
