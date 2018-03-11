@@ -8,6 +8,8 @@ tags:
 keywords:
   - open binaries
   - view source
+illustration: feature.jpg
+caption: 'Image courtesy of @rawpixel on Unsplash'
 draft: false 
 ---
 As artists mature, a critical phase is growing comfortable with showing our work. Despite the fact that artists who design for web audiences hit this stage even faster than most, with an incoming mix of criticism on both artistic choice and functional attributes, the truth is I've been uncomfortable with this concept for years.

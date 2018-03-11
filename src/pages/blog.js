@@ -29,8 +29,8 @@ export default function BlogPage({ data }) {
       <Navigation/>
       <Content>
         {posts.map((p, i) => (
-          <Item>
-            <PostPreview {...p} key={i}/>
+          <Item key={i}>
+            <PostPreview {...p}/>
           </Item>
         ))}
       </Content>

@@ -8,11 +8,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
 import PageContent from '../components/Content'
+import FeaturedImage from '../components/FeaturedImage'
 import toAbsolute from '../util/toAbsolute'
 
 const Headline = styled.h1`
@@ -48,15 +48,15 @@ export default function PostTemplate({ data }) {
     meta: { site: { host } },
     post: {
       fields: { slug },
-      frontmatter: { title, date, rawDate, keywords, image, author },
+      frontmatter: { title, date, rawDate, keywords, illustration, caption, author },
       excerpt,
       html,
     },
   } = data
 
-  const feature = toAbsolute(host, image && image.childImageSharp
-    ? image.childImageSharp.responsiveResolution.src
-    : '/share.jpg')
+  const hasFeature = illustration && illustration.childImageSharp
+  const feature = toAbsolute(host, hasFeature
+    ? hasFeature.responsiveResolution.src : '/share.jpg')
 
   const canonical = toAbsolute(host, slug)
 
@@ -123,6 +123,12 @@ export default function PostTemplate({ data }) {
         <Meta>
           Published on <time dateTime={rawDate}>{date}</time>. Authored by {author}.
         </Meta>
+        {hasFeature ? (
+          <FeaturedImage
+            src={hasFeature.responsiveResolution.src}
+            caption={caption || undefined}
+          />
+        ) : undefined}
         <PostContents
           dangerouslySetInnerHTML={{ __html: html }}
         />
@@ -145,6 +151,14 @@ export const pageQuery = graphql`
         rawDate: date
         keywords
         author
+        illustration {
+          childImageSharp {
+            responsiveResolution(width: 1200) {
+              src
+            }
+          }
+        }
+        caption
       }
       fields {
         slug
