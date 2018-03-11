@@ -31,6 +31,7 @@ const Headline = styled.h1`
 const Meta = styled.div`
   margin: 1.5em auto 3em auto;
   text-align: center;
+  line-height: 1.7em;
 `
 
 const PostContents = styled.div`
