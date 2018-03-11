@@ -32,7 +32,7 @@ Our web presence is, as of this writing, admittedly spartan. That too is by desi
 
 ## Implementing Open Design
 
-Several weeks ago, as I planned the redesign (and ultimate completion) of this site, Tom Dale, a recognized engineering prognosticator, posed an [unexpectedly controversial question.][tom-dale-q] He asks, "Can we agree, in 2018, human readable 'view source' is a constraint the web can discard?" I've explored this question at length myself while adopting modern web development practices over the last five years, and finally arrived at the conclusion we not only can, but should.
+Several weeks ago, as I planned the redesign (and ultimate completion) of this site, Tom Dale, a recognized engineering prognosticator, posed an [unexpectedly controversial question.][tom-dale-q] He asks, "Can we agree, in 2018, human readable 'view source' is a constraint the web can discard?" I've explored this question at length myself while adopting modern development practices over the last five years, and finally arrived at the conclusion we not only can, but should.
 
 To be clear, neither of us advocate removing the web platform's standard ability to inspect application state at runtime; far from it. Much of the web has always operated on text-based protocols, but as concerns for network reliability and performance take center stage, [binary formats are stepping in to aid distribution.][wasm]
 
@@ -40,7 +40,9 @@ Since I began developing for web audiences in the mid-90's, change has been the 
 
 Open binary formats empower this brand of radical market disruption, [and erase Western bias in critical systems.][tom-dale-w]
 
-Sounds good, right? There's one more hurdle we must clear: developer experience. Last year, SitePoint declared, ["Modern JavaScript Development is Hard"][sitepoint]&mdash; and they're right!&mdash; I've watched developers struggle to understand essential front-end tools even before the dawn of "modern" JavaScript. Can we resolve this final concern by applying principals of open design?
+Sounds good, right? There's one more hurdle we must clear: developer experience. Last year, SitePoint declared, ["Modern JavaScript Development is Hard"][sitepoint]&mdash; and they're right!&mdash; I've watched developers struggle to understand essential front-end tools even before the dawn of "modern" JavaScript. Yet, despite mounting evidence, some will argue opaque binaries are harmful.
+
+Can we resolve this final concern by applying principals of open design?
 
 In a word: yes. The blog you're reading at this very moment, and several programs that I'll mention later, indicate we believe so.
 
