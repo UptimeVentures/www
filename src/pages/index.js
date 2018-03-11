@@ -13,23 +13,24 @@ import Page from '../components/Page'
 import Navigation from '../components/Navigation'
 import Content from '../components/Content'
 
-const Headline = styled.div`
+const Wrap = styled.div`
   height: 80vh;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+`
 
-  h2 {
-    font-size: 2em;
-    @media(min-width: 800px) {
-      font-size: 4em;
-    }
+const Headline = styled.h2`
+  font-size: 2em;
+  @media(min-width: 800px) {
+    font-size: 4em;
   }
 
-  p {
-    font-size: 1.5em;
-  }
+`
+
+const Description = styled.p`
+  font-size: 1.5em;
 `
 
 export default function IndexPage() {
@@ -40,15 +41,15 @@ export default function IndexPage() {
       />
       <Navigation/>
       <Content>
-        <Headline>
+        <Wrap>
           <div>
-            <h2>Hello, we&apos;re Uptime Ventures.</h2>
-            <p>
+            <Headline>Hello, we&apos;re Uptime Ventures.</Headline>
+            <Description>
               We launch, coach, and partner with bold new companies
               to accelerate their evolution.
-            </p>
+            </Description>
           </div>
-        </Headline>
+        </Wrap>
       </Content>
     </Page>
   )
