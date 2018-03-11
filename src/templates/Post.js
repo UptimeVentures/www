@@ -48,7 +48,7 @@ export default function PostTemplate({ data }) {
     meta: { site: { host } },
     post: {
       fields: { slug },
-      frontmatter: { title, date, rawDate, keywords, illustration, caption, author },
+      frontmatter: { title, date, rawDate, keywords, illustration, illustrationDescription, caption, author },
       excerpt,
       html,
     },
@@ -125,7 +125,8 @@ export default function PostTemplate({ data }) {
         </Meta>
         {hasFeature ? (
           <FeaturedImage
-            src={hasFeature.responsiveResolution.src}
+            {...hasFeature.responsiveResolution}
+            alt={illustrationDescription || undefined}
             caption={caption || undefined}
           />
         ) : undefined}
@@ -155,9 +156,11 @@ export const pageQuery = graphql`
           childImageSharp {
             responsiveResolution(width: 1200) {
               src
+              srcSet
             }
           }
         }
+        illustrationDescription
         caption
       }
       fields {

@@ -30,9 +30,9 @@ const Image = styled.img`
   }
 `
 
-const FeaturedImage = ({ src, alt, caption, url }) => (
+const FeaturedImage = ({ src, srcSet, alt, caption, url }) => (
   <Container>
-    <Image src={src} alt={alt}/>
+    <Image src={src} srcset={srcSet} alt={alt}/>
     {caption ? (
       <figcaption>
         {url ? <a href={url}>{caption}</a> : caption}

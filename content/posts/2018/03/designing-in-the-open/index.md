@@ -9,6 +9,8 @@ keywords:
   - open binaries
   - view source
 illustration: feature.jpg
+illustrationDescription: 'Workers holding a planning session with coffee around a worktable covered
+in a map, laptop, camera, and small potted succulents.'
 caption: 'Image courtesy of @rawpixel on Unsplash'
 draft: false 
 ---

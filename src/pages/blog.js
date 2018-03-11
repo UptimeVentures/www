@@ -7,6 +7,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
+import Helmet from 'react-helmet'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
@@ -26,6 +27,9 @@ export default function BlogPage({ data }) {
 
   return (
     <Page>
+      <Helmet
+        title="Blog"
+      />
       <Navigation/>
       <Content>
         {posts.map((p, i) => (
