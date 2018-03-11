@@ -19,7 +19,7 @@ const Link = styled(GLink)`
 
 const Headline = styled.h3`
   font-size: 1.5em;
-  @media(max-width: 800px) {
+  @media(min-width: 800px) {
     font-size: 2em;
   }
 `
