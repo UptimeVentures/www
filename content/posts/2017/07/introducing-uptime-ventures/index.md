@@ -38,7 +38,7 @@ Whether it's the mountain air, open skies, or something altogether unrelated; li
 
 During the darkest period of recovery, I began reading the works of noted futurist Ray Kurzweil. I assumed that futurism, if anything, would offer hope and intellectual stimulation to my otherwise bored and depressed mind. I was right, though the ideas which sprang from my reading were unexpected to say the least.
 
-In *The Singularity is Near: When Humans Transcend Biology*, Kurzweil observes that, "Most short range forecasts of what is technically feasible in future time periods dramatically underestimate the power of future developments." In other words, because the greatest technological developments occurred in our relatively recent past, we tend to think the pace of innovation has always remained steady. In reality, history is full of many periods of intellectual stagnation. Unfortunately, this approach to framing history has been widely adopted.
+In [*The Singularity is Near: When Humans Transcend Biology*][singularity], Kurzweil observes that, "Most short range forecasts of what is technically feasible in future time periods dramatically underestimate the power of future developments." In other words, because the greatest technological developments occurred in our relatively recent past, we tend to think the pace of innovation has always remained steady. In reality, history is full of many periods of intellectual stagnation. Unfortunately, this approach to framing history has been widely adopted.
 
 Kurzweil instead chooses to focus on what he refers to as the "historical exponential," view of innovation, which plots major accomplishments with a comparatively recent, accelerated timeline. If you subscribe to this view, it's obvious we are living in a [period of unprecidented innovation, beginning in the year 1900 and extending into the distant future.](http://www.kurzweilai.net/the-law-of-accelerating-returns)
 
@@ -47,3 +47,5 @@ A core tenet of our mission at Uptime Ventures is that how and where technology 
 In the following weeks, I'll continue sharing more of the Uptime Ventures story, including projects that are being designed and built in-house, and also the open source work that has been contributed under the company banner. I hope you'll join me by subscribing via [RSS](/blog/rss.xml) or email. If you're so inclined, you can also follow us on [Twitter](https://twitter.com/UptimeVentures), or like [Uptime Ventures on Facebook.](https://facebook.com/UptimeVentures)
 
 I'm excited about where this journey will lead, even though I don't know the way. The software industry has undergone many changes before now, and I sense that it will soon change again. Hopefully, that shift will carry us towards a brighter, more diverse future, of which Uptime Ventures intends to be a part.
+
+[singularity]: https://en.wikipedia.org/wiki/The_Singularity_Is_Near
