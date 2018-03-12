@@ -28,11 +28,12 @@ I stopped talking about projects in public because I didn't know when, or if, I 
 
 Now in 2017, my recovery is well underway, but the lessons I learned while trying to handle client requests and manage a grueling medical schedule have taught me much. In fact, they're baked into our [founding mission](/mission/) here at Uptime Ventures. These ideals are evident in our focus on internal projects, honing skills and products for small communities through continuous delivery before releasing our ideas into the wider world.
 
+![Various in-progress renditions off the Uptime Ventures arrow logomark in black, red, green, blue, and finally,
+the official yellow.](artboard.png)
+
 While the expertise I've developed over years of consulting on diverse hardware systems running a plethora of languages will certainly be available to our clients, Uptime Ventures' main focus will be to find and exploit markets where applied technology can be maximally effective, choosing instead to operate as a trusted partner rather than a purely contract development team.
 
 Whether it's the mountain air, open skies, or something altogether unrelated; like others who came before me, I feel encouraged to dream bigger in the west.
-
-![Built in the west, to help people first](artboard.png)
 
 ## A Different Kind of Consultancy
 
