@@ -48,7 +48,7 @@ In a word: yes. The blog you're reading at this very moment, and several program
 
 ## Next Steps
 
-When this blog originally launched, I described a working relationship with our tools, stating that "how and why technologies are implemented is perhaps more important than the technologies themselves." At the time, I failed to realize the impact that vision would leave on our work.
+When this blog originally launched, I described a working relationship with our tools, stating that *how and why technologies are implemented is perhaps more important than the technologies themselves.* At the time, I failed to realize the impact that vision would leave on our work.
 
 Going forward, I'm working on a series of articles detailing the tools and practices we utilize here at [Uptime Ventures.][uv] We're also preparing a series of guides to help new developers cut though the static. Training curricula to address the constantly advancing needs of seasoned teams is on the horizon.
 
