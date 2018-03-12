@@ -4,7 +4,9 @@ author: 'Nicholas Young'
 layout: post
 draft: false 
 date: 2017-08-02
-image: share.jpg
+illustration: feature.jpg
+illustrationDescription: 'The upward arrow logomark of Uptime Ventures superimposed over a stylized older building in Denver, Colorado, USA'
+caption: 'Image courtesy of Unsplash'
 keywords:
   - gatsbyjs
   - react
