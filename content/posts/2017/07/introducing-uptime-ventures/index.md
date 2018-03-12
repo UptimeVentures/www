@@ -40,7 +40,7 @@ During the darkest period of recovery, I began reading the works of noted futuri
 
 In [*The Singularity is Near: When Humans Transcend Biology*][singularity], Kurzweil observes that, "Most short range forecasts of what is technically feasible in future time periods dramatically underestimate the power of future developments." In other words, because the greatest technological developments occurred in our relatively recent past, we tend to think the pace of innovation has always remained steady. In reality, history is full of many periods of intellectual stagnation. Unfortunately, this approach to framing history has been widely adopted.
 
-Kurzweil instead chooses to focus on what he refers to as the "historical exponential," view of innovation, which plots major accomplishments with a comparatively recent, accelerated timeline. If you subscribe to this view, it's obvious we are living in a [period of unprecidented innovation, beginning in the year 1900 and extending into the distant future.](http://www.kurzweilai.net/the-law-of-accelerating-returns)
+Kurzweil instead chooses to focus on what he refers to as the "[historical exponential][he]," view of innovation, which plots major accomplishments with a comparatively recent, accelerated timeline. If you subscribe to this view, it's obvious we are living in a [period of unprecidented innovation, beginning in the year 1900 and extending into the distant future.](http://www.kurzweilai.net/the-law-of-accelerating-returns)
 
 A core tenet of our mission at Uptime Ventures is that how and where technology is implemented is perhaps more important than the technology itself. With this purpose, I've created an agency designed to serve future needs. This belief also leads us to be a decisively multi-disciplinary firm; one that seems to seemlessly pair technical know-how with cultural awareness, thereby allowing us to safely explore the future of tech when combined with concepts from the arenas of medical, science, and artificial intellence.
 
@@ -49,3 +49,4 @@ In the following weeks, I'll continue sharing more of the Uptime Ventures story,
 I'm excited about where this journey will lead, even though I don't know the way. The software industry has undergone many changes before now, and I sense that it will soon change again. Hopefully, that shift will carry us towards a brighter, more diverse future, of which Uptime Ventures intends to be a part.
 
 [singularity]: https://en.wikipedia.org/wiki/The_Singularity_Is_Near
+[he]: https://en.wikipedia.org/wiki/The_Singularity_Is_Near#/media/File:Moore%27s_Law_over_120_Years.png
