@@ -24,8 +24,7 @@ const Image = styled.img`
     transition: all .2s ease-in-out;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     &:hover {
-      transform: scale(1.010);
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     }
   }
 `
