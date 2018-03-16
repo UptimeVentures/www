@@ -82,7 +82,7 @@ function onCreateNode({ node, boundActionCreators, getNode }) {
       slug = [
         'blog',
         format(node.frontmatter.date, 'YYYY/MM'),
-        slugify(node.frontmatter.title),
+        slugify(node.frontmatter.title.replace(`'`, ``)),
       ].join('/')
     } else {
       slug = slugify(node.frontmatter.title)
