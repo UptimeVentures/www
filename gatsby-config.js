@@ -75,7 +75,8 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
-    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -121,7 +122,7 @@ module.exports = {
                 }
               }
             `,
-            output: '/blog/rss.xml',
+            output: '/blog/feed.xml',
           },
         ]
       },

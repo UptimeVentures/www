@@ -14,7 +14,14 @@ const pageTemplate = resolve('src/templates/Page.js')
 const postTemplate = resolve('src/templates/Post.js')
 
 function createPages({ graphql, boundActionCreators }) {
-  const { createPage } = boundActionCreators
+  const { createPage, createRedirect } = boundActionCreators
+
+  // Temporarily redirect feed URLs
+  createRedirect({
+    fromPath: '/blog/rss.xml',
+    toPath: '/blog/feed.xml',
+    isPermanent: true,
+  })
 
   const query = `
     {
