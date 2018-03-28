@@ -78,7 +78,7 @@ const Contact = () => (
 ```
 
 Behind the scenes, we're using React's [Context API][react-context] to
-drive data propagation. If the form has errors, parent components will render them only when the field values are invalid, and remove them when the errors are no longer present. And that's [UFS'][ufs] greatest strength: the library is only a few lines of *non-magical* JavaScript. Technically speaking, we aren't tied to [JSX][jsx] or [React][react]; even though its declarative syntax is ideal for expressing our intent, we aren't married to a specific framework.
+drive data propagation. If the form has errors, parent components will render them only when the field values are invalid, and remove them when the errors are no longer present. And that's [UFS'][ufs] greatest strength: the library is only a few lines of *non-magical* JavaScript. Technically speaking, [JSX][jsx] and [React][react] are optional. Though its declarative syntax is ideal for expressing our intent, we aren't married to a specific framework.
 
 Additionally, it's possible that the API can become even cleaner as we explore upcoming language features.
 
