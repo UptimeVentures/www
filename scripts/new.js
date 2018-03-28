@@ -5,7 +5,7 @@
  * @flow
  */
 
-const { join, resolve } = require('path')
+const { resolve } = require('path')
 const inquirer = require('inquirer')
 const fs = require('fs-extra')
 const { safeDump } = require('js-yaml')
@@ -49,9 +49,7 @@ async function run() {
   }
 
   const output = template(safeDump(attrs))
-  const root = layout === 'post'
-    ? join(pluralize(layout), format(now, 'YYYY/MM'))
-    : pluralize(layout)
+  const root = pluralize(layout)
 
   const filePath = assets
     ? resolve(__dirname, contentPath, root, slug, 'index.md')
