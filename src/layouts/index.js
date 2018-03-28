@@ -12,6 +12,8 @@ import 'normalize.css'
 import 'typeface-lato'
 import 'typeface-pt-serif'
 
+import './prism.css'
+
 export default function Layout({ children }) {
   return (
     <div>
