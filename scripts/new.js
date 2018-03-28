@@ -8,7 +8,7 @@
 const { resolve } = require('path')
 const inquirer = require('inquirer')
 const fs = require('fs-extra')
-const { safeDump } = require('js-yaml')
+const { safeLoad, safeDump } = require('js-yaml')
 const { slugify } = require('transliteration')
 const pluralize = require('pluralize')
 const format = require('date-fns/format')
@@ -20,11 +20,24 @@ ${frontmatter}---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacus leo, interdum venenatis lacinia in, tincidunt a dolor. Phasellus gravida felis ac tortor laoreet commodo. In sodales quam eleifend bibendum fringilla. Maecenas viverra, risus nec luctus scelerisque, tortor metus sagittis nulla, at consequat ligula metus vel eros. Donec nec odio ornare, vehicula arcu at, condimentum erat. Nullam sollicitudin, metus eget consectetur venenatis, ex eros faucibus enim, ut molestie risus lorem id sapien. Nullam commodo molestie odio, ultrices tempor sem vestibulum vitae. Fusce ut pulvinar leo. Nullam quis neque a neque elementum posuere id at nulla. Vestibulum vehicula ex a diam condimentum suscipit.`
 
 async function run() {
-  const { title, layout, assets } = await inquirer.prompt([
+  const authors = await getAuthors()
+
+  const { title, author, layout, assets } = await inquirer.prompt([
     {
-      type: 'inpuut',
+      type: 'input',
       name: 'title',
       message: 'Please provide a title',
+    },
+    authors.length ? {
+      type: 'list',
+      name: 'author',
+      message: 'Please select an author',
+      choices: authors.map(a => a.id ? a.id : 'Uptime Ventures Team'),
+    } : {
+      type: 'input',
+      name: 'author',
+      message: 'Who is authoring this content?',
+      required: true,
     },
     {
       type: 'list',
@@ -43,6 +56,7 @@ async function run() {
   const slug = slugify(title)
   const attrs = {
     title,
+    author,
     layout: layout.toLowerCase(),
     date: format(now, 'YYYY-MM-DD'),
     draft: true,
@@ -66,6 +80,17 @@ async function run() {
   } catch (_) {
     throw new Error(`Unable to write file: ${filePath}`)
   }
+}
+
+async function getAuthors() {
+  const authors = resolve(__dirname, contentPath, 'authors.yaml')
+  const access = await fs.pathExists(authors)
+
+  if (access) {
+    return safeLoad(await fs.readFile(authors))
+  }
+
+  return []
 }
 
 run().catch(console.error)
