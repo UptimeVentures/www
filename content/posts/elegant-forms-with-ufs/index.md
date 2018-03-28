@@ -41,10 +41,10 @@ Both scenarios are made easier by well-formed APIs.
 Here at [Uptime Ventures][ufs], we're always interested in tools that ease common
 developer processes. All applications, regardless of platform, need to receive
 user input, which is generally a form. In early 2018, I wondered if we could
-invent a cross platform library that tidied user experience flows when dealing
+invent a cross platform library that tidied user experience flows and enhance developer happiness when dealing
 with complex inputs.
 
-To my surprise, we've done it. Allow me to introduce the [Ultimate Form
+We've done it, and the result is even better than I could've hoped for. Allow me to introduce the [Ultimate Form
 System][ufs] (UFS); a concise form validation library, designed to meet our
 demanding needs, and now available to you. UFS presents a unified API that feels
 natural across iOS, Android, and the web, starting with tools provided by React
