@@ -1,167 +1,164 @@
-/*
-Name:   Duotone Light
-Author: Simurai, adapted from DuoTone themes for Atom (http://simurai.com/projects/2016/01/01/duotone-themes)
-
-Conversion: Bram de Haan (http://atelierbram.github.io/Base2Tone-prism/output/prism/prism-base2tone-morning-light.css)
-Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
-*/
+/**
+ * a11y-light theme for JavaScript, CSS, and HTML
+ * Based on the okaidia theme: https://github.com/PrismJS/prism/blob/gh-pages/themes/prism-okaidia.css
+ * @author ericwbailey
+ */
 
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-  font-size: 1em !important;
-  text-align: left;
-  line-height: 1.375;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
+	color: #545454;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+  font-size: 1em;
 
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
 
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  background: #faf8f5;
-  color: #728fcb;
-}
-
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
-  background: #faf8f5;
-}
-
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  text-shadow: none;
-  background: #faf8f5;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
 /* Code blocks */
+code[class*="language-"] {
+	line-height: 1.5;
+}
+
 pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
-  overflow: auto;
+	padding: 1em;
+	margin: 0.5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #fefefe;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
+	padding: 0.1em;
+	border-radius: 0.3em;
+	white-space: normal;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #b6ad9a;
+	color: #696969;
 }
 
 .token.punctuation {
-  color: #b6ad9a;
-}
-
-.token.namespace {
-  opacity: .7;
-}
-
-.token.tag,
-.token.operator,
-.token.number {
-  color: #063289;
+	color: #545454;
 }
 
 .token.property,
-.token.function {
-  color: #b29762;
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #007faa;
 }
 
-.token.tag-id,
-.token.selector,
-.token.atrule-id {
-  color: #2d2006;
-}
-
-code.language-javascript,
-.token.attr-name {
-  color: #896724;
-}
-
-code.language-css,
-code.language-scss,
 .token.boolean,
+.token.number {
+	color: #008000;
+}
+
+.token.selector,
+.token.attr-name,
 .token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #aa5d00;
+}
+
+.token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
-.language-scss .token.string,
 .style .token.string,
-.token.attr-value,
-.token.keyword,
-.token.control,
-.token.directive,
-.token.unit,
-.token.statement,
-.token.regex,
-.token.atrule {
-  color: #728fcb;
-}
-
-.token.placeholder,
 .token.variable {
-  color: #93abdc;
+	color: #008000;
 }
 
-.token.deleted {
-  text-decoration: line-through;
+.token.atrule,
+.token.attr-value,
+.token.function {
+	color: #aa5d00;
 }
 
-.token.inserted {
-  border-bottom: 1px dotted #2d2006;
-  text-decoration: none;
+.token.keyword {
+	color: #d91e18;
 }
 
-.token.italic {
-  font-style: italic;
+.token.regex,
+.token.important {
+	color: #d91e18;
 }
 
 .token.important,
 .token.bold {
-  font-weight: bold;
+	font-weight: bold;
 }
-
-.token.important {
-  color: #896724;
+.token.italic {
+	font-style: italic;
 }
 
 .token.entity {
-  cursor: help;
+	cursor: help;
 }
 
-pre > code.highlight {
-  outline: .4em solid #896724;
-  outline-offset: .4em;
-}
+@media screen and (-ms-high-contrast: active) {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		color: windowText;
+		background: window;
+	}
 
-/* overrides color-values for the Line Numbers plugin
- * http://prismjs.com/plugins/line-numbers/
- */
-.line-numbers .line-numbers-rows {
-  border-right-color: #ece8de;
-}
+	:not(pre) > code[class*="language-"],
+	pre[class*="language-"] {
+		background: window;
+	}
 
-.line-numbers-rows > span:before {
-  color: #cdc4b1;
-}
+	.token.important {
+		background: highlight;
+		color: window;
+		font-weight: normal;
+	}
 
-/* overrides color-values for the Line Highlight plugin
- * http://prismjs.com/plugins/line-highlight/
- */
-.line-highlight {
-  background: rgba(45, 32, 6, 0.2);
-  background: -webkit-linear-gradient(left, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));
-  background: linear-gradient(to right, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));
+	.token.atrule,
+	.token.attr-value,
+	.token.function,
+	.token.keyword,
+	.token.operator,
+	.token.selector {
+		font-weight: bold;
+	}
+
+	.token.attr-value,
+	.token.comment,
+	.token.doctype,
+	.token.function,
+	.token.keyword,
+	.token.operator,
+	.token.property,
+	.token.string {
+		color: highlight;
+	}
+
+	.token.attr-value,
+	.token.url {
+		font-weight: normal;
+	}
 }
