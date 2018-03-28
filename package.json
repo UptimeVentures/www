@@ -6,7 +6,7 @@
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-eslint": "8.2.2",
-    "babel-jest": "23.0.0-alpha.0",
+    "babel-jest": "22.4.3",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
@@ -44,7 +44,7 @@
     "gatsby-transformer-sharp": "1.6.22",
     "gatsby-transformer-yaml": "1.5.16",
     "inquirer": "5.2.0",
-    "jest": "23.0.0-alpha.0",
+    "jest": "22.4.3",
     "lodash.get": "4.4.2",
     "normalize.css": "8.0.0",
     "pluralize": "7.0.0",
