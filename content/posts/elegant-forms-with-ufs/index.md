@@ -97,7 +97,7 @@ import { withAPI } from '@uptimeventures/ufs-react'
 
 const ErrorWrapper = withAPI(({ name, api: { errors }) => (
   <div>
-    {errors[name] ? errors.name : null}
+    {errors[name] ? errors[name] : null}
   </div>
 ))
 ```
