@@ -95,7 +95,7 @@ I'll use a specialized component, that you will likely employ, to explain.
 import React from 'react'
 import { withAPI } from '@uptimeventures/ufs-react'
 
-const ErrorWrapper = withAPI(({ name, api: { errors }) => (
+const ErrorWrapper = withAPI(({ name, api: { errors }}) => (
   <div>
     {errors[name] ? errors[name] : null}
   </div>
