@@ -12,6 +12,7 @@ const format = require('date-fns/format')
 
 const pageTemplate = resolve('src/templates/Page.js')
 const postTemplate = resolve('src/templates/Post.js')
+const guideTemplate = resolve('src/templates/Guide.js')
 
 function createPages({ graphql, boundActionCreators }) {
   const { createPage, createRedirect } = boundActionCreators
@@ -84,6 +85,11 @@ function onCreateNode({ node, boundActionCreators, getNode }) {
         format(node.frontmatter.date, 'YYYY/MM'),
         slugify(node.frontmatter.title.replace(`'`, ``)),
       ].join('/')
+    } else if (fileNode.relativePath.indexOf('guides/') !== -1) {
+      slug = [
+        'guides',
+        slugify(node.frontmatter.title.replace(`'`, ``)),
+      ].join('/')
     } else {
       slug = slugify(node.frontmatter.title)
     }
@@ -112,6 +118,8 @@ function template(t = 'page') {
   switch (t) {
     case 'post':
       return postTemplate
+    case 'guide':
+      return guideTemplate
     default:
       return pageTemplate
   }
