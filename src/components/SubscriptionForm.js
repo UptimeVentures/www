@@ -86,6 +86,7 @@ const SubscriptionForm = ({ id }: Props) => (
     {({ handleSubmit, errors, success }) => (
       <form
         action={subscribeUrl(id)}
+        method="post"
         onSubmit={handleSubmit}
       >
         <Container>
