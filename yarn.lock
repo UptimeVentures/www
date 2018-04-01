@@ -152,6 +152,23 @@
   version "0.0.32"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.32.tgz#0d3cb31022f8427ea58c008af32b80da126ca4e3"
 
+"@uptimeventures/ufs-dom@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@uptimeventures/ufs-dom/-/ufs-dom-0.4.0.tgz#7ca537f33184687efafe4db5aa313c88911b4054"
+  dependencies:
+    babel-runtime "^6.26.0"
+    prop-types "^15.6.0"
+    react "^16.2.0"
+
+"@uptimeventures/ufs-react@0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@uptimeventures/ufs-react/-/ufs-react-0.4.1.tgz#50ef6aa9ba38af27c97de1ef2b0d3c528a00e1b3"
+  dependencies:
+    babel-runtime "^6.26.0"
+    is-promise "^2.1.0"
+    prop-types "^15.6.0"
+    react "^16.2.0"
+
 "@zeit/check-updates@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@zeit/check-updates/-/check-updates-1.1.0.tgz#d0f65026a36f27cd1fd54c647d8294447c1d2d8b"
@@ -9571,7 +9588,7 @@ react-typography@^0.16.1:
   version "0.16.13"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.13.tgz#94bdd2a9448823bc74d8ebf7465d86c7dbe20dcf"
 
-react@16.3.0:
+react@16.3.0, react@^16.2.0:
   version "16.3.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.3.0.tgz#fc5a01c68f91e9b38e92cf83f7b795ebdca8ddff"
   dependencies:

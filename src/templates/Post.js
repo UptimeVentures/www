@@ -14,6 +14,7 @@ import Navigation from '../components/Navigation'
 import PageContent from '../components/Content'
 import SharePanel from '../components/SharePanel'
 import FeaturedImage from '../components/FeaturedImage'
+import SubscriptionForm from '../components/SubscriptionForm'
 import toAbsolute from '../util/toAbsolute'
 
 const Headline = styled.h1`
@@ -44,6 +45,7 @@ const Content = styled(PageContent)`
   max-width: 800px;
 `
 
+// $FlowFixMe
 export default function PostTemplate({ data }) {
   const {
     meta: { site: { host } },
@@ -135,6 +137,7 @@ export default function PostTemplate({ data }) {
         <PostContents
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        <SubscriptionForm id="1695694"/>
       </Content>
     </Page>
   )

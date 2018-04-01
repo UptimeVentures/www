@@ -4,6 +4,8 @@
   "description": "Security with convenience",
   "main": "index.js",
   "devDependencies": {
+    "@uptimeventures/ufs-dom": "0.4.0",
+    "@uptimeventures/ufs-react": "0.4.1",
     "babel-core": "6.26.0",
     "babel-eslint": "8.2.2",
     "babel-jest": "22.4.3",
