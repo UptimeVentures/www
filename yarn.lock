@@ -4335,9 +4335,9 @@ gatsby-plugin-feed@1.3.20:
     pify "^3.0.0"
     rss "^1.2.2"
 
-gatsby-plugin-google-analytics@1.0.25:
-  version "1.0.25"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.25.tgz#e867e8257e8391fb2823c3e78fcc7f23074fc3cc"
+gatsby-plugin-google-analytics@1.0.27:
+  version "1.0.27"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-1.0.27.tgz#d040baffb3f74eeb236d4b6ce7020925c921ab1c"
   dependencies:
     babel-runtime "^6.26.0"
 
@@ -4364,9 +4364,9 @@ gatsby-plugin-offline@1.0.15:
     babel-runtime "^6.26.0"
     sw-precache "^5.0.0"
 
-gatsby-plugin-react-helmet@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.8.tgz#26928bfd38f6828f479d76393839523ddf85b005"
+gatsby-plugin-react-helmet@2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.9.tgz#f1b163044b4b86634b5a839639e3e7e51ffc4e2b"
   dependencies:
     babel-runtime "^6.26.0"
 
