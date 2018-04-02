@@ -137,7 +137,7 @@ export default function PostTemplate({ data }) {
         <PostContents
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        <SubscriptionForm id="1695694"/>
+        <SubscriptionForm id="bba3556ae4b84e208d0899accbc65b41"/>
       </Content>
     </Page>
   )
