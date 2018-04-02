@@ -1,7 +1,7 @@
 ---
 title: Why We're Betting on Rust
 layout: post
-date: 2018-04-03
+date: 2018-04-02
 draft: false
 author: Nicholas Young
 illustration: feature.jpg
