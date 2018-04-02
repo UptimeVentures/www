@@ -100,8 +100,11 @@ const SubscriptionForm = ({ id }: Props) => (
             )}
           </Headline>
           <Description>
-            Technology moves fast. Get our blog articles
-            and guides sent to your inbox.
+            {
+              success
+              ? "Please confirm your email address by clicking the link we've sent you."
+              : 'Technology moves fast. Get our blog articles and guides sent to your inbox.'
+            }
           </Description>
           <Email
             type="email"
