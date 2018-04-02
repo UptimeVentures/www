@@ -65,8 +65,6 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMM DD, YYYY")
             rawDate: date
-            keywords
-            tags
           }
           excerpt
         }

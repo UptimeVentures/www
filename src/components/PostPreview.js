@@ -11,6 +11,8 @@ import GLink from 'gatsby-link'
 
 const Container = styled.div`
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 `
 
 const Link = styled(GLink)`
@@ -24,9 +26,14 @@ const Headline = styled.h3`
   }
 `
 
+const Published = styled.time`
+  font-size: .9em;
+`
+
 const Preview = styled.p`
   font-family: "PT Serif", serif;
   font-size: 1em;
+  margin-top: 1em;
 `
 
 const PostPreview = ({ fields, frontmatter, excerpt }) => (
@@ -35,6 +42,9 @@ const PostPreview = ({ fields, frontmatter, excerpt }) => (
       <Link to={fields.slug}>
         <Headline>{frontmatter.title}</Headline>
       </Link>
+    ) : undefined}
+    {frontmatter.rawDate && frontmatter.date ? (
+      <Published dateTime={frontmatter.rawDate}>{frontmatter.date}</Published>
     ) : undefined}
     {excerpt ? (
       <Preview dangerouslySetInnerHTML={{ __html: excerpt }}/>
