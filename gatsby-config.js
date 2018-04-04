@@ -5,6 +5,8 @@
  * @flow
  */
 
+const url = require('url')
+
 module.exports = {
   siteMetadata: {
     title: 'Uptime Ventures',
@@ -114,6 +116,8 @@ module.exports = {
                       frontmatter {
                         title
                         date
+                        author
+                        categories
                       }
                       excerpt
                       html
@@ -122,6 +126,28 @@ module.exports = {
                 }
               }
             `,
+            serialize({ query: { site, allMarkdownRemark }}) {
+              const edges = allMarkdownRemark.edges
+                ? allMarkdownRemark.edges.map(e => e.node) : []
+
+              const intoItem = n => ({
+                title: n.frontmatter.title,
+                description: n.excerpt,
+                url: url.resolve(
+                  site.siteMetadata.siteUrl,
+                  n.fields.slug
+                ),
+                guid: url.resolve(
+                  site.siteMetadata.siteUrl,
+                  n.fields.slug
+                ),
+                categories: n.frontmatter.categories || [],
+                author: n.frontmatter.author,
+                date: n.frontmatter.date,
+              })
+
+              return edges.map(intoItem)
+            },
             output: '/blog/feed.xml',
           },
         ]

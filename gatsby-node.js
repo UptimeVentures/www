@@ -13,6 +13,7 @@ const format = require('date-fns/format')
 const pageTemplate = resolve('src/templates/Page.js')
 const postTemplate = resolve('src/templates/Post.js')
 const guideTemplate = resolve('src/templates/Guide.js')
+const categoryTemplate = resolve('src/templates/Category.js')
 
 function createPages({ graphql, boundActionCreators }) {
   const { createPage, createRedirect } = boundActionCreators
@@ -26,15 +27,17 @@ function createPages({ graphql, boundActionCreators }) {
 
   const query = `
     {
-      allMarkdownRemark(filter: {
+      blog: allMarkdownRemark(filter: {
         frontmatter: { draft: { ne: true } }
+        fileAbsolutePath: { regex: "/posts/" }
       }) {
         edges {
           node {
             frontmatter {
               title
               layout
-              tags
+              categories
+              author
             }
             fields {
               slug
@@ -50,13 +53,17 @@ function createPages({ graphql, boundActionCreators }) {
       return Promise.reject(errors)
     }
 
-    const { allMarkdownRemark } = data
+    const { blog } = data
 
-    // Process markdown posts.
-    allMarkdownRemark.edges.forEach(({ node }) => {
+    // Process blog posts.
+    let postCategories = []
+    let postAuthors = []
+    blog.edges.forEach(({ node }) => {
       const slug = get(node, 'fields.slug')
       const show = get(node, 'frontmatter.show')
       const layout = get(node, 'frontmatter.layout')
+      const categories = get(node, 'frontmatter.categories')
+      const author = get(node, 'frontmatter.author')
 
       if (slug) {
         createPage({
@@ -68,7 +75,31 @@ function createPages({ graphql, boundActionCreators }) {
           },
         })
       }
+
+      if (categories) {
+        postCategories = postCategories.concat(categories)
+      }
+
+      if (author) {
+        postAuthors = postAuthors.concat(postAuthors)
+      }
     })
+
+    // Create category index pages for blog posts.
+    postCategories.filter((v, i, acc) => acc.indexOf(v) === i)
+      .forEach(category => {
+        const slug = `/blog/category/${slugify(category)}/`
+        createPage({
+          path: slug,
+          component: categoryTemplate,
+          context: {
+            category,
+            slug,
+          },
+        })
+      })
+
+    // Create author index pages for blog posts.
   })
 }
 

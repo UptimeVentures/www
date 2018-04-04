@@ -3,11 +3,9 @@ title: 'Designing In The Open'
 author: 'Nicholas Young'
 layout: post
 date: 2018-03-11
-tags:
-  - open-design
-keywords:
-  - open binaries
-  - view source
+categories:
+  - Open Design
+  - View Source
 illustration: feature.jpg
 illustrationDescription: 'Workers holding a planning session with coffee around a worktable covered
 in a map, laptop, camera, and small potted succulents.'

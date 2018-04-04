@@ -7,10 +7,10 @@ date: 2017-08-02
 illustration: feature.jpg
 illustrationDescription: 'The upward arrow logomark of Uptime Ventures superimposed over a stylized older building in Denver, Colorado, USA'
 caption: 'Image courtesy of Unsplash'
+categories:
+  - Launches
+  - Branding
 keywords:
-  - gatsbyjs
-  - react
-tags:
   - introductions
   - mission
 ---

@@ -8,6 +8,9 @@ illustration: feature.jpg
 illustrationDescription: 'Tangled power and data wires emerge from the
 rear ports of a server, installed in its rack.'
 caption: Image courtesy of Thomas Kvistholt on Unsplash
+categories:
+  - Rust
+  - Future-Proofing
 tags:
     - rust
     - gotham

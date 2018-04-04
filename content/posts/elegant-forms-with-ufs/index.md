@@ -4,12 +4,12 @@ author: Nicholas Young
 layout: post
 date: 2018-03-28
 draft: false
-tags:
-  - form-validation
-  - react
-  - front-end
+categories:
+  - React
+  - Form Validation
+  - Front-End Engineering
 keywords:
-  - react
+  - reactjs
   - ultimate form system
 illustration: feature.jpg
 illustrationDescription: 'A laptop, sitting on a desk, with code on its screen.'
