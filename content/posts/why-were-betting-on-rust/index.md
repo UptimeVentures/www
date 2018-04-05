@@ -76,6 +76,6 @@ https://doc.rust-lang.org/1.2.0/book/rust-inside-other-languages.html
 [serde]: https://github.com/serde-rs/serde
 [diesel]: https://diesel.rs
 [futures]: https://github.com/rust-lang-nursery/futures-rs
-[uv]: https://www.uptime.ventures/
+[uv]: /
 [ownership]: https://doc.rust-lang.org/book/second-edition/ch04-01-what-is-ownership.html
 [tock]: https://github.com/helena-project/tock
