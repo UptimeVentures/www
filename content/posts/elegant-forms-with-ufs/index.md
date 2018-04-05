@@ -1,6 +1,7 @@
 ---
 title: Creating Elegant Forms with UFS
-author: Nicholas Young
+authors:
+  - Nicholas Young
 layout: post
 date: 2018-03-28
 draft: false

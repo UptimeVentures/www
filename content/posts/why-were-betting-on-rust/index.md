@@ -1,9 +1,10 @@
 ---
 title: Why We're Betting on Rust
+authors:
+  - Nicholas Young
 layout: post
 date: 2018-04-02
 draft: false
-author: Nicholas Young
 illustration: feature.jpg
 illustrationDescription: 'Tangled power and data wires emerge from the
 rear ports of a server, installed in its rack.'

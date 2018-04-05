@@ -1,6 +1,7 @@
 ---
 title: 'Designing In The Open'
-author: 'Nicholas Young'
+authors:
+  - Nicholas Young
 layout: post
 date: 2018-03-11
 categories:

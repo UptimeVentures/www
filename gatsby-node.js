@@ -14,8 +14,9 @@ const pageTemplate = resolve('src/templates/Page.js')
 const postTemplate = resolve('src/templates/Post.js')
 const guideTemplate = resolve('src/templates/Guide.js')
 const categoryTemplate = resolve('src/templates/Category.js')
+const authorTemplate = resolve('src/templates/Author.js')
 
-function createPages({ graphql, boundActionCreators }) {
+async function createPages({ graphql, boundActionCreators }) {
   const { createPage, createRedirect } = boundActionCreators
 
   // Temporarily redirect feed URLs
@@ -37,7 +38,7 @@ function createPages({ graphql, boundActionCreators }) {
               title
               layout
               categories
-              author
+              authors
             }
             fields {
               slug
@@ -48,42 +49,42 @@ function createPages({ graphql, boundActionCreators }) {
     }
   `
 
-  return graphql(query).then(({ errors, data }) => {
-    if (errors) {
-      return Promise.reject(errors)
+  const { data, errors } = await graphql(query)
+
+  if (errors) {
+    throw new Error(errors.join(', '))
+  }
+
+  const { blog } = data
+
+  // Process blog posts.
+  let postCategories = []
+  let postAuthors = []
+  blog.edges.forEach(({ node }) => {
+    const slug = get(node, 'fields.slug')
+    const show = get(node, 'frontmatter.show')
+    const layout = get(node, 'frontmatter.layout')
+    const categories = get(node, 'frontmatter.categories')
+    const authors = get(node, 'frontmatter.authors')
+
+    if (slug) {
+      createPage({
+        path: slug,
+        component: template(layout),
+        context: {
+          slug,
+          show,
+        },
+      })
     }
 
-    const { blog } = data
+    if (categories) {
+      postCategories = postCategories.concat(categories)
+    }
 
-    // Process blog posts.
-    let postCategories = []
-    let postAuthors = []
-    blog.edges.forEach(({ node }) => {
-      const slug = get(node, 'fields.slug')
-      const show = get(node, 'frontmatter.show')
-      const layout = get(node, 'frontmatter.layout')
-      const categories = get(node, 'frontmatter.categories')
-      const author = get(node, 'frontmatter.author')
-
-      if (slug) {
-        createPage({
-          path: slug,
-          component: template(layout),
-          context: {
-            slug,
-            show,
-          },
-        })
-      }
-
-      if (categories) {
-        postCategories = postCategories.concat(categories)
-      }
-
-      if (author) {
-        postAuthors = postAuthors.concat(postAuthors)
-      }
-    })
+    if (authors) {
+      postAuthors = postAuthors.concat(authors)
+    }
 
     // Create category index pages for blog posts.
     postCategories.filter((v, i, acc) => acc.indexOf(v) === i)
@@ -100,6 +101,18 @@ function createPages({ graphql, boundActionCreators }) {
       })
 
     // Create author index pages for blog posts.
+    postAuthors.filter((v, i, acc) => acc.indexOf(v) === i)
+      .forEach(author => {
+        const slug = `/blog/author/${slugify(author)}/`
+        createPage({
+          path: slug,
+          component: authorTemplate,
+          context: {
+            author,
+            slug,
+          },
+        })
+      })
   })
 }
 

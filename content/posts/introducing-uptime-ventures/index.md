@@ -1,6 +1,7 @@
 ---
 title: Introducing Uptime Ventures
-author: 'Nicholas Young'
+authors:
+  - Nicholas Young
 layout: post
 draft: false 
 date: 2017-08-02

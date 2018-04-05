@@ -7,6 +7,7 @@
 
 const url = require('url')
 const absolutify = require('absolutify')
+const humanizeList = require('humanize-list')
 
 module.exports = {
   siteMetadata: {
@@ -116,7 +117,7 @@ module.exports = {
                       frontmatter {
                         title
                         date
-                        author
+                        authors
                         categories
                       }
                       excerpt
@@ -151,7 +152,9 @@ module.exports = {
                   n.fields.slug
                 ),
                 categories: n.frontmatter.categories || [],
-                author: n.frontmatter.author,
+                author: humanizeList(n.frontmatter.authors, {
+                  oxfordComma: true,
+                }),
                 date: n.frontmatter.date,
               })
 
