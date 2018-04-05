@@ -126,6 +126,14 @@ module.exports = {
                 }
               }
             `,
+            setup({ query: { site: { siteMetadata } } }) {
+              return {
+                title: siteMetadata.title,
+                description: siteMetadata.description,
+                site_url: siteMetadata.siteUrl,
+                feed_url: url.resolve(siteMetadata.siteUrl, '/blog/feed.xml'),
+              }
+            },
             serialize({ query: { site, allMarkdownRemark } }) {
               const edges = allMarkdownRemark.edges
                 ? allMarkdownRemark.edges.map(e => e.node) : []
