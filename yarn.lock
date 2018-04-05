@@ -185,6 +185,10 @@ abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
 
+absolutify@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/absolutify/-/absolutify-0.1.0.tgz#1b86f89d8803f6f1dd8e42306d6e30a5ad4f6be7"
+
 accepts@^1.3.0, accepts@~1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.5.tgz#eb777df6011723a3b14e8a72c0805c8e86746bd2"

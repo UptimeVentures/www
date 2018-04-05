@@ -52,7 +52,7 @@ Going forward, I'm working on a series of articles detailing the tools and pract
 
 Open design is the only way forward.
 
-[uv]: https://www.uptime.ventures
+[uv]: /
 [svn]: https://signalvnoise.com/posts/2928-designing-in-the-open
 [frost]: http://bradfrost.com/blog/post/designing-in-the-open/
 [open-design]: https://en.wikipedia.org/wiki/Open_design
