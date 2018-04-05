@@ -129,10 +129,19 @@ module.exports = {
               const edges = allMarkdownRemark.edges
                 ? allMarkdownRemark.edges.map(e => e.node) : []
 
+              const rewriteMarkup = n => {
+                const replaced = n.html.replace(
+                  '<a href="/">',
+                  '<a href="https://www.uptime.ventures/">'
+                )
+
+                return replaced || n.html
+              }
+
               const intoItem = n => ({
                 title: n.frontmatter.title,
                 description: n.excerpt,
-                custom_elements: [{ 'content:encoded': n.html }],
+                custom_elements: [{ 'content:encoded': rewriteMarkup(n) }],
                 url: url.resolve(
                   site.siteMetadata.siteUrl,
                   n.fields.slug
