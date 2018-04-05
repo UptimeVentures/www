@@ -1,5 +1,10 @@
 - slug: ufs
   title: UFS
-  url: https://bitbucket.org/uptimeventures/ufs
+  url: https://bitbucket.org/uptimeventures/ufs/
   description:
     Building forms is a chore, even in modern user interface libraries. Somehow, we've managed to change that, and make it easy, maybe even fun. UFS (the Ultimate Form System, if you will) makes building forms a breeze; available for React and React Native.
+- slug: wizard
+  title: Wizard
+  url: https://bitbucket.org/uptimeventures/wizard/
+  description:
+    Lightweight, multi-step flow control for your React apps. Stop worrying about how you'll design efficient onboarding flows, and let the Wizard take care of it.
