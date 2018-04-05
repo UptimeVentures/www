@@ -23,9 +23,9 @@ const Wrap = styled.div`
 `
 
 const Headline = styled.h2`
-  font-size: 2em;
+  font-size: 1.5em;
   @media(min-width: 800px) {
-    font-size: 4em;
+    font-size: 3em;
   }
 
 `
@@ -42,6 +42,9 @@ const Subhead = styled.h3`
 
 const Description = styled.p`
   font-size: 1.5em;
+  @media(min-width: 800px) {
+    max-width: 80%;
+  }
 `
 
 const Subdescription = styled.p`
@@ -98,10 +101,9 @@ export default function IndexPage({ data }) {
       <Content>
         <Wrap>
           <div>
-            <Headline>Hello, we&apos;re Uptime Ventures.</Headline>
+            <Headline>Digital excellence, delivered.</Headline>
             <Description>
-              We launch, coach, and partner with bold new companies
-              to accelerate their evolution. 
+              We&rsquo;re Uptime Ventures. We launch, coach, and partner with bold new companies to accelerate their evolution.
             </Description>
           </div>
         </Wrap>
