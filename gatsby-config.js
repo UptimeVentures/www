@@ -126,7 +126,7 @@ module.exports = {
                 }
               }
             `,
-            serialize({ query: { site, allMarkdownRemark }}) {
+            serialize({ query: { site, allMarkdownRemark } }) {
               const edges = allMarkdownRemark.edges
                 ? allMarkdownRemark.edges.map(e => e.node) : []
 
@@ -151,8 +151,8 @@ module.exports = {
             },
             output: '/blog/feed.xml',
           },
-        ]
+        ],
       },
     },
-  ]
+  ],
 }

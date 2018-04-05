@@ -69,7 +69,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "lint": "eslint src/ scripts/",
+    "lint": "eslint src/ scripts/ *.js",
     "new": "node scripts/new.js"
   },
   "jest": {
