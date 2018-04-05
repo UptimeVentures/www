@@ -73,10 +73,12 @@ const Grid = styled.div`
   }
 `
 
-const Project = styled.div``
-
 const Subproject = styled.p`
   font-size: 1em;
+`
+
+const Read = styled.p`
+  font-family: "PT Serif", serif;
 `
 
 export default function IndexPage({ data }) {
@@ -117,7 +119,7 @@ export default function IndexPage({ data }) {
               <Link to={fields.slug}>
                 <h4>{frontmatter.title}</h4>
               </Link>
-              <p dangerouslySetInnerHTML={{ __html: excerpt }}/>
+              <Read dangerouslySetInnerHTML={{ __html: excerpt }}/>
             </div>
           ))}
         </Grid>
@@ -132,7 +134,7 @@ export default function IndexPage({ data }) {
               <a href={url}>
                 <h4>{title}</h4>
               </a>
-              <Subproject>{description}</Subproject>
+              <Read dangerouslySetInnerHTML={{ __html: description }}/>
             </div>
           ))}
         </Grid>
