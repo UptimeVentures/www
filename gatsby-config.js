@@ -89,7 +89,6 @@ module.exports = {
                 title: feedTitle
                 description: feedDescription
                 siteUrl
-                site_url: siteUrl
               }
             }
           }
@@ -133,6 +132,7 @@ module.exports = {
               const intoItem = n => ({
                 title: n.frontmatter.title,
                 description: n.excerpt,
+                custom_elements: [{ 'content:encoded': n.html }],
                 url: url.resolve(
                   site.siteMetadata.siteUrl,
                   n.fields.slug
