@@ -73,10 +73,6 @@ const Grid = styled.div`
   }
 `
 
-const Subproject = styled.p`
-  font-size: 1em;
-`
-
 const Read = styled.p`
   font-family: "PT Serif", serif;
 `
