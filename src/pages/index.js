@@ -41,7 +41,7 @@ const Subhead = styled.h3`
 `
 
 const Description = styled.p`
-  font-size: 1.1em;
+  font-size: 1.2em;
   @media(min-width: 800px) {
     max-width: 80%;
     font-size: 1.5em;
