@@ -113,7 +113,7 @@ export default function IndexPage({ data }) {
         <Section>
           <Subhead>Writing</Subhead>
           <Subdescription>
-            Our blog is where we investigate difficult technological questions, and prepare you to tackle complex issues of the future.
+            Our blog is where we share knowledge, investigate difficult technological questions, and prepare you to tackle complex issues of the future.
           </Subdescription>
           <Grid>
             {posts.map(({ frontmatter, excerpt, fields }, id) => (
