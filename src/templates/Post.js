@@ -8,6 +8,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
+import humanizeList from 'humanize-list'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
@@ -51,7 +52,7 @@ export default function PostTemplate({ data }) {
     meta: { site: { host } },
     post: {
       fields: { slug },
-      frontmatter: { title, date, rawDate, keywords, illustration, illustrationDescription, caption, author },
+      frontmatter: { title, date, rawDate, keywords, illustration, illustrationDescription, caption, authors },
       excerpt,
       html,
     },
@@ -62,6 +63,7 @@ export default function PostTemplate({ data }) {
     ? hasFeature.responsiveResolution.src : '/share.jpg')
 
   const canonical = toAbsolute(host, slug)
+  const authorsList = humanizeList(authors, { oxfordComma: true })
 
   return (
     <Page>
@@ -124,7 +126,7 @@ export default function PostTemplate({ data }) {
       <Content>
         <Headline>{title}</Headline>
         <Meta>
-          Published on <time dateTime={rawDate}>{date}</time> / Authored by {author}
+          Published on <time dateTime={rawDate}>{date}</time> / Authored by {authorsList}
         </Meta>
         <SharePanel title={title} url={canonical}/>
         {hasFeature ? (
