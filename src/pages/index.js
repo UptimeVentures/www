@@ -15,7 +15,7 @@ import Navigation from '../components/Navigation'
 import Content from '../components/Content'
 
 const Wrap = styled.div`
-  height: 80vh;
+  height: 70vh;
   min-height: 400px;
   max-height: 500px;
   display: flex;
@@ -23,7 +23,8 @@ const Wrap = styled.div`
 `
 
 const Headline = styled.h2`
-  font-size: 1.5em;
+  font-size: 2em;
+  margin-top: 0;
   @media(min-width: 800px) {
     font-size: 3em;
   }
@@ -35,7 +36,6 @@ const Subhead = styled.h3`
   border-top: 1px rgba(0, 0, 0, .1) solid;
   padding-top: 1em;
   @media(min-width: 800px) {
-    padding-top: .75em;
     font-size: 2em;
   }
 `
@@ -78,6 +78,10 @@ const Read = styled.p`
   font-family: "PT Serif", serif;
 `
 
+const Section = styled.div`
+  margin-bottom: 1em;
+`
+
 export default function IndexPage({ data }) {
   const projects = data.projects
     ? data.projects.edges.map(e => e.node) : []
@@ -106,35 +110,39 @@ export default function IndexPage({ data }) {
             </Description>
           </div>
         </Wrap>
-        <Subhead>Writing</Subhead>
-        <Subdescription>
-          Our blog is where we investigate difficult technological questions, and prepare you to tackle complex issues of the future.
-        </Subdescription>
-        <Grid>
-          {posts.map(({ frontmatter, excerpt, fields }, id) => (
-            <div key={id}>
-              <Link to={fields.slug}>
-                <h4>{frontmatter.title}</h4>
-              </Link>
-              <Read dangerouslySetInnerHTML={{ __html: excerpt }}/>
-            </div>
-          ))}
-        </Grid>
-        <Subhead>Open Source</Subhead>
-        <Subdescription>
-          We practice <Link to="/blog/category/open-design/">open design</Link> wherever
-          possible, which leads naturally towards open source. Here are a few of our favorite projects:
-        </Subdescription>
-        <Grid>
-          {projects.map(({ title, description, url }, id) => (
-            <div key={id}>
-              <a href={url}>
-                <h4>{title}</h4>
-              </a>
-              <Read dangerouslySetInnerHTML={{ __html: description }}/>
-            </div>
-          ))}
-        </Grid>
+        <Section>
+          <Subhead>Writing</Subhead>
+          <Subdescription>
+            Our blog is where we investigate difficult technological questions, and prepare you to tackle complex issues of the future.
+          </Subdescription>
+          <Grid>
+            {posts.map(({ frontmatter, excerpt, fields }, id) => (
+              <div key={id}>
+                <Link to={fields.slug}>
+                  <h4>{frontmatter.title}</h4>
+                </Link>
+                <Read dangerouslySetInnerHTML={{ __html: excerpt }}/>
+              </div>
+            ))}
+          </Grid>
+        </Section>
+        <Section>
+          <Subhead>Open Source</Subhead>
+          <Subdescription>
+            We practice <Link to="/blog/category/open-design/">open design</Link> wherever
+            possible, which leads naturally towards open source. Here are a few of our favorite projects:
+          </Subdescription>
+          <Grid>
+            {projects.map(({ title, description, url }, id) => (
+              <div key={id}>
+                <a href={url}>
+                  <h4>{title}</h4>
+                </a>
+                <Read dangerouslySetInnerHTML={{ __html: description }}/>
+              </div>
+            ))}
+          </Grid>
+        </Section>
       </Content>
     </Page>
   )
