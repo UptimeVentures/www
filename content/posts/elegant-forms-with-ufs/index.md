@@ -16,12 +16,12 @@ illustration: feature.jpg
 illustrationDescription: 'A laptop, sitting on a desk, with code on its screen.'
 caption: 'Image courtesy of Fabian Grohs on Unsplash'
 ---
-Ask any front-end web developer: forms can be notoriously difficult. You have
+Ask any frontend web developer: forms can be notoriously difficult. You have
 to keep up with filled and unfilled fields, which of them are valid, display
 errors when your users invariably attempt to enter invalid data, and depending
 on state, allow the form to be submitted or prevent submission entirely.
 
-Working on the back-end couldn't be more different. I trained initially on data
+Working on the backend couldn't be more different. I trained initially on data
 validation in server-side languages before considering JavaScript, HTML, and
 CSS as potential disciplines. In my world, form validation and error reporting
 was largely a solved problem: applications evaluate the complete dataset by
@@ -29,7 +29,7 @@ a clearly defined validation rules. The result, valid or invalid, is
 returned to the user. From the application's point of view, transient states
 are rare.
 
-Entry, as pointed out by the front-end engineer, should be effortless for the
+Entry, as pointed out by the frontend engineer, should be effortless for the
 user. Relating errors to a given field is critical
 for the success of this happy path. On the other hand, our server is largely
 concerned with how deeply values are nested, and the total size of our
