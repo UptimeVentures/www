@@ -97,7 +97,6 @@
       },
       "date-weekday-mismatch": true,
       "diacritics": true,
-      "stop-words": true,
       "date-weekday-mismatch": true
   }
 }
