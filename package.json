@@ -59,6 +59,13 @@
     "react-helmet": "5.2.0",
     "react-social-sharing": "1.3.2",
     "styled-components": "3.2.5",
+    "textlint": "10.2.1",
+    "textlint-rule-apostrophe": "1.0.0",
+    "textlint-rule-date-weekday-mismatch": "1.0.5",
+    "textlint-rule-diacritics": "0.0.2",
+    "textlint-rule-no-todo": "2.0.0",
+    "textlint-rule-stop-words": "1.0.3",
+    "textlint-rule-terminology": "1.1.27",
     "transliteration": "1.6.2",
     "typeface-lato": "0.0.54",
     "typeface-pt-sans": "0.0.54",
@@ -71,6 +78,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "lint": "eslint src/ scripts/ *.js",
+    "lint:text": "textlint content/**/*.md",
     "new": "node scripts/new.js"
   },
   "jest": {
