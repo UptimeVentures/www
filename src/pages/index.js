@@ -92,7 +92,8 @@ export default function IndexPage({ data }) {
   return (
     <Page>
       <Helmet
-        title="Uptime Ventures"
+        title="Digital excellence, delivered"
+        titleTemplate="%s | Uptime Ventures"
         meta={[
           {
             name: 'keywords',
