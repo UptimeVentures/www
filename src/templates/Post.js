@@ -124,21 +124,22 @@ export default function PostTemplate({ data }) {
       </Helmet>
       <Navigation/>
       <Content>
-        <Headline>{title}</Headline>
-        <Meta>
-          Published on <time dateTime={rawDate}>{date}</time> / Authored by {authorsList}
-        </Meta>
-        <SharePanel title={title} url={canonical}/>
-        {hasFeature ? (
-          <FeaturedImage
-            {...hasFeature.responsiveResolution}
-            alt={illustrationDescription || undefined}
-            caption={caption || undefined}
+        <article>
+          <Headline>{title}</Headline> <Meta>
+            Published on <time dateTime={rawDate}>{date}</time> / Authored by {authorsList}
+          </Meta>
+          <SharePanel title={title} url={canonical}/>
+          {hasFeature ? (
+            <FeaturedImage
+              {...hasFeature.responsiveResolution}
+              alt={illustrationDescription || undefined}
+              caption={caption || undefined}
+            />
+          ) : undefined}
+          <PostContents
+            dangerouslySetInnerHTML={{ __html: html }}
           />
-        ) : undefined}
-        <PostContents
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        </article>
         <SubscriptionForm id="bba3556ae4b84e208d0899accbc65b41"/>
       </Content>
     </Page>
