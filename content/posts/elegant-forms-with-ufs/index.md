@@ -103,7 +103,7 @@ const ErrorWrapper = withAPI(({ name, api: { errors }}) => (
 ))
 ```
 
-While our component can store and utilize local state, state isn't required. If the field we're watching experiences an error, our component will be re-rendered with the error value, as shown above. Notice that we do this all without complex logic or markup.
+While our component can store and use local state, state isn't required. If the field we're watching experiences an error, our component will be re-rendered with the error value, as shown above. Notice that we do this all without complex logic or markup.
 
 You may have also noticed how logic and presentation concerns are split between the [`ufs`][ufscore] and [`ufs-dom`][ufsdom] packages in our first example. This separation allows UFS to render anywhere React renders: on web or native platforms. It also eases graduation from using predefined components to developing your own, as shown above.
 
