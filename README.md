@@ -21,4 +21,4 @@ This site is automatically built by Netlify. Take a look at `package.json` and `
 
 ## License
 
-&copy; 2018 Uptime Ventures, Ltd. All rights reserved.
+(C) Copyright 2018 Uptime Ventures, Ltd. All rights reserved.
