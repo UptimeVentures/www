@@ -13,6 +13,7 @@
     "react"
   ],
   "plugins": [
+    "markdown-in-js/babel",
     "transform-object-rest-spread"
   ]
 }
