@@ -42,6 +42,12 @@ const Button = styled.button`
   background: rgba(0, 0, 0, .05);
   border: none;
   cursor: pointer;
+  margin: 0 auto;
+`
+
+const Message = styled.small`
+  display: block;
+  margin-top: 1.5em;
 `
 
 const subscribeUrl = (id: string) =>
@@ -112,6 +118,9 @@ const SubscriptionForm = ({ id }: Props) => (
           <Button>
             Sign Up
           </Button>
+          <Message>
+            We also syndicate via <a href="/blog/feed.xml">RSS</a>, if that's your thing.
+          </Message>
         </Container>
       </form>
     )}
