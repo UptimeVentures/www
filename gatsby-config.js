@@ -70,11 +70,11 @@ module.exports = {
       options: {
         name: 'Uptime Ventures',
         short_name: 'UV',
-        icons: [],
         start_url: '/',
         background_color: 'white',
         theme_color: 'white',
         display: 'minimal-ui',
+        icon: 'static/logo.svg',
       },
     },
     'gatsby-plugin-offline',
