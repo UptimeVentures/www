@@ -117,6 +117,11 @@ export default function IndexPage({ data }) {
             {posts.map(({ frontmatter, excerpt, fields }, id) => (
               <div key={id}>
                 <Link to={fields.slug}>
+                  <img
+                    {...frontmatter.illustration.image.responsiveResolution}
+                  />
+                </Link>
+                <Link to={fields.slug}>
                   <h4>{frontmatter.title}</h4>
                 </Link>
                 <p dangerouslySetInnerHTML={{ __html: excerpt }}/>
@@ -133,6 +138,8 @@ export default function IndexPage({ data }) {
           <Grid>
             {projects.map(({ title, description, url }, id) => (
               <div key={id}>
+                <img
+                />
                 <a href={url}>
                   <h4>{title}</h4>
                 </a>
@@ -175,6 +182,14 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            illustration {
+              image: childImageSharp {
+                responsiveResolution(width: 300, height: 200) {
+                  src
+                  srcSet
+                }
+              }
+            }
           }
           excerpt
         }
