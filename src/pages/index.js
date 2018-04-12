@@ -49,6 +49,7 @@ const Description = styled.p`
 `
 
 const Subdescription = styled.p`
+  font-size: 1.1em;
   @media(min-width: 700px) {
     max-width: 60%;
   }
@@ -72,10 +73,6 @@ const Grid = styled.div`
       }
     }
   }
-`
-
-const Read = styled.p`
-  font-family: "PT Serif", serif;
 `
 
 const Section = styled.div`
@@ -122,7 +119,7 @@ export default function IndexPage({ data }) {
                 <Link to={fields.slug}>
                   <h4>{frontmatter.title}</h4>
                 </Link>
-                <Read dangerouslySetInnerHTML={{ __html: excerpt }}/>
+                <p dangerouslySetInnerHTML={{ __html: excerpt }}/>
               </div>
             ))}
           </Grid>
@@ -139,7 +136,7 @@ export default function IndexPage({ data }) {
                 <a href={url}>
                   <h4>{title}</h4>
                 </a>
-                <Read dangerouslySetInnerHTML={{ __html: description }}/>
+                <p dangerouslySetInnerHTML={{ __html: description }}/>
               </div>
             ))}
           </Grid>

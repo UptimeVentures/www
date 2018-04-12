@@ -12099,17 +12099,13 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typeface-lato@0.0.54:
+typeface-nunito@0.0.54:
   version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-lato/-/typeface-lato-0.0.54.tgz#6ea56309a8b0cfdb7e8246e05de4b58b8272b47c"
+  resolved "https://registry.yarnpkg.com/typeface-nunito/-/typeface-nunito-0.0.54.tgz#5046f24d8d1492ca8fd823896d6e1cdefbe63203"
 
-typeface-pt-sans@0.0.54:
+typeface-open-sans@0.0.54:
   version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-pt-sans/-/typeface-pt-sans-0.0.54.tgz#b6d5a409b2ee618b961f1116b86c421a18a7efd0"
-
-typeface-pt-serif@0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-pt-serif/-/typeface-pt-serif-0.0.54.tgz#139269d821f44c675bd3713169808cfc51a07d9e"
+  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.54.tgz#20f5b5ea5c7f95d89dc1f8b2d2b1457680129cee"
 
 typography-normalize@^0.14.0:
   version "0.14.0"

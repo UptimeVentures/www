@@ -23,7 +23,6 @@ const Headline = styled.h2`
 `
 
 const Description = styled.p`
-  font-family: "PT Serif", serif;
   font-size: 1em;
 `
 

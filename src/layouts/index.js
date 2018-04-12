@@ -9,8 +9,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import 'normalize.css'
-import 'typeface-lato'
-import 'typeface-pt-serif'
+import 'typeface-open-sans'
+import 'typeface-nunito'
 
 import './prism.css'
 

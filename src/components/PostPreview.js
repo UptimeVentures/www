@@ -31,7 +31,6 @@ const Published = styled.time`
 `
 
 const Preview = styled.p`
-  font-family: "PT Serif", serif;
   font-size: 1em;
   margin-top: 1em;
 `

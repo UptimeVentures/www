@@ -10,7 +10,7 @@ import CodePlugin from 'typography-plugin-code'
 
 const options = {
   headerFontFamily: ['lato', 'sans-serif'],
-  bodyFontFamily: ['lato', 'sans-serif'],
+  bodyFontFamily: ['nunito', 'sans-serif'],
   baseFontSize: '16px',
   baseLineHeight: 1.5,
   blockMarginBottom: 0.65,

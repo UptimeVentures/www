@@ -38,7 +38,6 @@ const Meta = styled.div`
 `
 
 const PostContents = styled.div`
-  font-family: "PT Serif", serif;
   font-size: 1.1em;
 `
 
