@@ -69,7 +69,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Uptime Ventures',
-        short_name: 'UV',
+        short_name: 'Uptime Ventures',
         start_url: '/',
         background_color: 'white',
         theme_color: 'white',
