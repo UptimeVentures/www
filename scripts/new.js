@@ -56,7 +56,7 @@ async function run() {
   const slug = slugify(title)
   const attrs = {
     title,
-    author,
+    authors: [author],
     layout: layout.toLowerCase(),
     date: format(now, 'YYYY-MM-DD'),
     draft: true,
