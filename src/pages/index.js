@@ -116,11 +116,13 @@ export default function IndexPage({ data }) {
           <Grid>
             {posts.map(({ frontmatter, excerpt, fields }, id) => (
               <div key={id}>
-                <Link to={fields.slug}>
-                  <img
-                    {...frontmatter.illustration.image.responsiveResolution}
-                  />
-                </Link>
+                {frontmatter.illustration ? (
+                  <Link to={fields.slug}>
+                    <img
+                      {...frontmatter.illustration.image.responsiveResolution}
+                    />
+                  </Link>
+                ) : undefined}
                 <Link to={fields.slug}>
                   <h4>{frontmatter.title}</h4>
                 </Link>
