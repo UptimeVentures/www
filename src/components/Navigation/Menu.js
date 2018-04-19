@@ -19,6 +19,7 @@ const Items = styled.ul`
 const Item = styled.li`
   margin-right: 1em;
   padding: 0 0 0 0;
+  font-family: "Open Sans", sans-serif;
   &:last-child { margin-right: 0; }
 `
 
