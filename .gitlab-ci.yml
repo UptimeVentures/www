@@ -1,0 +1,30 @@
+image: node:latest
+
+variables:
+  CI: 'true'
+
+before_script:
+  - yarn install
+
+stages:
+  - test 
+  - build
+
+lint:
+  stage: test 
+  script:
+    - yarn lint
+
+test:
+  stage: test
+  script:
+    - yarn test 
+
+build:
+  stage: build
+  script:
+    - yarn build
+  artifacts:
+    expire_in: '1 week'
+    paths:
+      - public/
