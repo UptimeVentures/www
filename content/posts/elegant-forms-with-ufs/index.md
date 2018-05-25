@@ -118,5 +118,5 @@ That's where you come in. How can UFS improve further? It is already the only *z
 [jsx]: https://reactjs.org/docs/introducing-jsx.html
 [hoc]: https://reactjs.org/docs/higher-order-components.html
 [react-context]: https://reactjs.org/docs/context.html
-[ufscore]: https://bitbucket.org/uptimeventures/ufs/src/master/packages/ufs-react/
-[ufsdom]: https://bitbucket.org/uptimeventures/ufs/src/master/packages/ufs-dom/
+[ufscore]: https://gitlab.com/uptimeventures/ufs/tree/master/packages/ufs-react/
+[ufsdom]: https://gitlab.com/uptimeventures/ufs/tree/master/packages/ufs-dom/
