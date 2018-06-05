@@ -142,6 +142,11 @@ function onCreateNode({ node, boundActionCreators, getNode }) {
   if (slug) {
     createNodeField({ node, name: 'slug', value: slashify(slug) })
   }
+
+  // draft: true is the default
+  if (node.fields && !node.fields.hasOwnProperty('draft')) {
+    createNodeField({ node, name: 'draft', value: true })
+  }
 }
 
 function slashify(slug) {
