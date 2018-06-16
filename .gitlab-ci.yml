@@ -15,11 +15,6 @@ lint:
   script:
     - yarn lint
 
-test:
-  stage: test
-  script:
-    - yarn test 
-
 build:
   stage: build
   script:
