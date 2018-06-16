@@ -26,6 +26,14 @@ module.exports = {
         name: 'content',
       },
     },
+    {
+      resolve: '@uptimeventures/gatsby-source-rss',
+      options: {
+        feeds: [
+          'https://www.nicholaswyoung.com/rss.xml',
+        ],
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

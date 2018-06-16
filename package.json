@@ -4,6 +4,7 @@
   "description": "Security with convenience",
   "main": "index.js",
   "devDependencies": {
+    "@uptimeventures/gatsby-source-rss": "0.1.0",
     "@uptimeventures/ufs-dom": "0.4.0",
     "@uptimeventures/ufs-react": "0.4.1",
     "absolutify": "0.1.0",
