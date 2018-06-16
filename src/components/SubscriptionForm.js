@@ -119,7 +119,7 @@ const SubscriptionForm = ({ id }: Props) => (
             Sign Up
           </Button>
           <Message>
-            We also syndicate via <a href="/blog/feed.xml">RSS</a>, if that's your thing.
+            We also syndicate via <a href="/blog/feed.xml">RSS</a>, if that&rsquo;s your thing.
           </Message>
         </Container>
       </form>

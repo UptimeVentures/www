@@ -75,11 +75,7 @@ const Contents = () => md`
 `
 
 // $FlowFixMe
-export default function MissionPage({ data }) {
-  const {
-    meta: { site: { host } },
-  } = data
-
+export default function MissionPage() {
   const title = 'Mission'
 
   return (
