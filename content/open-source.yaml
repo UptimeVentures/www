@@ -1,10 +1,15 @@
 - slug: ufs
   title: UFS
-  url: https://bitbucket.org/uptimeventures/ufs/
+  url: https://gitlab.com/uptimeventures/ufs/
   description:
     Building forms can be a chore, even in modern user interface libraries. We've made it easy, maybe even fun. UFS (the Ultimate Form System, if you will) makes building forms a breeze and is available for React and React Native.
 - slug: wizard
   title: Wizard
-  url: https://bitbucket.org/uptimeventures/wizard/
+  url: https://gitlab.com/uptimeventures/wizard/
   description:
     Lightweight, multi-step flow control for your React apps. Stop worrying about how you'll design efficient onboarding flows, and let the Wizard take care of it.
+- slug: gotham-middleware-jwt
+  title: Gotham Authentication Middleware
+  url: https://gitlab.com/uptimeventures/gotham-middleware-jwt/
+  description:
+    Authentication middleware for the Gotham web framework, written in Rust. Keep unauthorized users away from your API, and authenticate users with type safe helpers.
