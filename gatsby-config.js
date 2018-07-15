@@ -107,7 +107,7 @@ module.exports = {
           {
             query: `
               {
-                allMarkdownRemark(
+                blog: allMarkdownRemark(
                   filter: {
                     fileAbsolutePath: { regex: "/posts/" }
                     frontmatter: { draft: { ne: true } }
@@ -143,30 +143,11 @@ module.exports = {
                 feed_url: url.resolve(siteMetadata.siteUrl, '/blog/feed.xml'),
               }
             },
-            serialize({ query: { site, allMarkdownRemark } }) {
-              const edges = allMarkdownRemark.edges
-                ? allMarkdownRemark.edges.map(e => e.node) : []
+            serialize({ query: { site, blog } }) {
+              const edges = blog.edges
+                ? blog.edges.map(e => e.node) : []
 
-              const intoItem = n => ({
-                title: n.frontmatter.title,
-                description: n.excerpt,
-                custom_elements: [{ 'content:encoded': absolutify(n.html, site.siteMetadata.siteUrl) }],
-                url: url.resolve(
-                  site.siteMetadata.siteUrl,
-                  n.fields.slug
-                ),
-                guid: url.resolve(
-                  site.siteMetadata.siteUrl,
-                  n.fields.slug
-                ),
-                categories: n.frontmatter.categories || [],
-                author: humanizeList(n.frontmatter.authors, {
-                  oxfordComma: true,
-                }),
-                date: n.frontmatter.date,
-              })
-
-              return edges.map(intoItem)
+              return edges.map(e => intoFeedItem(e, site))
             },
             output: '/blog/feed.xml',
           },
@@ -174,4 +155,25 @@ module.exports = {
       },
     },
   ],
+}
+
+function intoFeedItem(n, site) {
+  return {
+    title: n.frontmatter.title,
+    description: n.excerpt,
+    custom_elements: [{ 'content:encoded': absolutify(n.html, site.siteMetadata.siteUrl) }],
+    url: url.resolve(
+      site.siteMetadata.siteUrl,
+      n.fields.slug
+    ),
+    guid: url.resolve(
+      site.siteMetadata.siteUrl,
+      n.fields.slug
+    ),
+    categories: n.frontmatter.categories || [],
+    author: humanizeList(n.frontmatter.authors, {
+      oxfordComma: true,
+    }),
+    date: n.frontmatter.date,
+  }
 }
