@@ -8,10 +8,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
-import humanizeList from 'humanize-list'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
+import Attribution from '../components/Attribution'
 import PageContent from '../components/Content'
 import SharePanel from '../components/SharePanel'
 import FeaturedImage from '../components/FeaturedImage'
@@ -29,6 +29,15 @@ const Headline = styled.h1`
   @media(min-width: 960px) {
     font-size: 3em;
   }
+`
+
+const Subhead = styled.h2`
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 1.3em;
+  font-weight: 300;
 `
 
 const Meta = styled.div`
@@ -51,7 +60,7 @@ export default function PostTemplate({ data }) {
     meta: { site: { host } },
     post: {
       fields: { slug },
-      frontmatter: { title, date, rawDate, keywords, illustration, illustrationDescription, caption, authors },
+      frontmatter: { title, subtitle, date, rawDate, keywords, illustration, illustrationDescription, caption, authors },
       excerpt,
       html,
     },
@@ -62,7 +71,6 @@ export default function PostTemplate({ data }) {
     ? hasFeature.responsiveResolution.src : '/share.jpg')
 
   const canonical = toAbsolute(host, slug)
-  const authorsList = humanizeList(authors, { oxfordComma: true })
 
   return (
     <Page>
@@ -124,8 +132,12 @@ export default function PostTemplate({ data }) {
       <Navigation/>
       <Content>
         <article>
-          <Headline>{title}</Headline> <Meta>
-            Published on <time dateTime={rawDate}>{date}</time> / Authored by {authorsList}
+          <Headline>{title}</Headline>
+          {subtitle ? (
+            <Subhead>{subtitle}</Subhead>
+          ) : undefined}
+          <Meta>
+            Published on <time dateTime={rawDate}>{date}</time> / Authored by <Attribution authors={authors}/>
           </Meta>
           <SharePanel title={title} url={canonical}/>
           {hasFeature ? (
@@ -155,6 +167,7 @@ export const pageQuery = graphql`
     post: markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+        subtitle
         date(formatString: "MMMM DD, YYYY")
         rawDate: date
         keywords
