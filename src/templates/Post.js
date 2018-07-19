@@ -31,15 +31,6 @@ const Headline = styled.h1`
   }
 `
 
-const Subhead = styled.h2`
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 0;
-  font-style: italic;
-  font-size: 1.3em;
-  font-weight: 300;
-`
-
 const Meta = styled.div`
   margin: 1.5em auto 1.5em auto;
   text-align: center;
@@ -60,7 +51,7 @@ export default function PostTemplate({ data }) {
     meta: { site: { host } },
     post: {
       fields: { slug },
-      frontmatter: { title, subtitle, date, rawDate, keywords, illustration, illustrationDescription, caption, authors },
+      frontmatter: { title, date, rawDate, keywords, illustration, illustrationDescription, caption, authors },
       excerpt,
       html,
     },
@@ -133,9 +124,6 @@ export default function PostTemplate({ data }) {
       <Content>
         <article>
           <Headline>{title}</Headline>
-          {subtitle ? (
-            <Subhead>{subtitle}</Subhead>
-          ) : undefined}
           <Meta>
             Published on <time dateTime={rawDate}>{date}</time> / Authored by <Attribution authors={authors}/>
           </Meta>
@@ -167,7 +155,6 @@ export const pageQuery = graphql`
     post: markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        subtitle
         date(formatString: "MMMM DD, YYYY")
         rawDate: date
         keywords
