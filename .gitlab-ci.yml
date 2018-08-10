@@ -17,6 +17,7 @@ lint:
   stage: test 
   script:
     - yarn lint
+    - yarn lint:text
 
 build:
   stage: build
