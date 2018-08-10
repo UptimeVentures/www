@@ -17,7 +17,7 @@ const categoryTemplate = resolve('src/templates/Category.js')
 const authorTemplate = resolve('src/templates/Author.js')
 
 async function createPages({ graphql, actions }) {
-  const { createPage, createRedirect } = actions 
+  const { createPage, createRedirect } = actions
 
   // Temporarily redirect feed URLs
   createRedirect({
@@ -117,7 +117,7 @@ async function createPages({ graphql, actions }) {
 }
 
 function onCreateNode({ node, actions, getNode }) {
-  const { createNodeField } = actions 
+  const { createNodeField } = actions
   const fileNode = getNode(node.parent)
 
   let slug
