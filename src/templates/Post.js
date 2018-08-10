@@ -8,12 +8,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
 import Attribution from '../components/Attribution'
 import PageContent from '../components/Content'
-import SharePanel from '../components/SharePanel'
 import FeaturedImage from '../components/FeaturedImage'
 import SubscriptionForm from '../components/SubscriptionForm'
 import toAbsolute from '../util/toAbsolute'
@@ -59,7 +59,7 @@ export default function PostTemplate({ data }) {
 
   const hasFeature = illustration && illustration.childImageSharp
   const feature = toAbsolute(host, hasFeature
-    ? hasFeature.responsiveResolution.src : '/share.jpg')
+    ? hasFeature.resolutions.src : '/share.jpg')
 
   const canonical = toAbsolute(host, slug)
 
@@ -127,10 +127,9 @@ export default function PostTemplate({ data }) {
           <Meta>
             Published on <time dateTime={rawDate}>{date}</time> / Authored by <Attribution authors={authors}/>
           </Meta>
-          <SharePanel title={title} url={canonical}/>
           {hasFeature ? (
             <FeaturedImage
-              {...hasFeature.responsiveResolution}
+              {...hasFeature.resolutions}
               alt={illustrationDescription || undefined}
               caption={caption || undefined}
             />
@@ -161,7 +160,7 @@ export const pageQuery = graphql`
         authors
         illustration {
           childImageSharp {
-            responsiveResolution(width: 1200) {
+            resolutions(width: 1200) {
               src
               srcSet
             }

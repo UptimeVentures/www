@@ -16,8 +16,8 @@ const guideTemplate = resolve('src/templates/Guide.js')
 const categoryTemplate = resolve('src/templates/Category.js')
 const authorTemplate = resolve('src/templates/Author.js')
 
-async function createPages({ graphql, boundActionCreators }) {
-  const { createPage, createRedirect } = boundActionCreators
+async function createPages({ graphql, actions }) {
+  const { createPage, createRedirect } = actions
 
   // Temporarily redirect feed URLs
   createRedirect({
@@ -116,8 +116,8 @@ async function createPages({ graphql, boundActionCreators }) {
   })
 }
 
-function onCreateNode({ node, boundActionCreators, getNode }) {
-  const { createNodeField } = boundActionCreators
+function onCreateNode({ node, actions, getNode }) {
+  const { createNodeField } = actions
   const fileNode = getNode(node.parent)
 
   let slug

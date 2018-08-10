@@ -9,6 +9,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
@@ -119,7 +120,7 @@ export default function IndexPage({ data }) {
                 {frontmatter.illustration ? (
                   <Link to={fields.slug}>
                     <img
-                      {...frontmatter.illustration.image.responsiveResolution}
+                      {...frontmatter.illustration.image.resolutions}
                     />
                   </Link>
                 ) : undefined}
@@ -186,7 +187,7 @@ export const pageQuery = graphql`
             title
             illustration {
               image: childImageSharp {
-                responsiveResolution(width: 300, height: 200) {
+                resolutions(width: 300, height: 200) {
                   src
                   srcSet
                 }
