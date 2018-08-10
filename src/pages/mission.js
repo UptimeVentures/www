@@ -9,6 +9,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import md from 'markdown-in-js'
+import { graphql } from 'gatsby'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'

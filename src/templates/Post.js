@@ -8,6 +8,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
 
 import Page from '../components/Page'
 import Navigation from '../components/Navigation'
@@ -59,7 +60,7 @@ export default function PostTemplate({ data }) {
 
   const hasFeature = illustration && illustration.childImageSharp
   const feature = toAbsolute(host, hasFeature
-    ? hasFeature.responsiveResolution.src : '/share.jpg')
+    ? hasFeature.resolutions.src : '/share.jpg')
 
   const canonical = toAbsolute(host, slug)
 
@@ -130,7 +131,7 @@ export default function PostTemplate({ data }) {
           <SharePanel title={title} url={canonical}/>
           {hasFeature ? (
             <FeaturedImage
-              {...hasFeature.responsiveResolution}
+              {...hasFeature.resolutions}
               alt={illustrationDescription || undefined}
               caption={caption || undefined}
             />
@@ -161,7 +162,7 @@ export const pageQuery = graphql`
         authors
         illustration {
           childImageSharp {
-            responsiveResolution(width: 1200) {
+            resolutions(width: 1200) {
               src
               srcSet
             }
