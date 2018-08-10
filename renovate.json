@@ -2,7 +2,8 @@
   "extends": [":app"],
   "timezone": "America/Denver",
   "labels": [
-    "bot"
+    "bot",
+    "deps"
   ],
   "rebaseStalePrs": true,
   "automerge": true
