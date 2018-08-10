@@ -7,7 +7,7 @@ variables:
   CI: 'true'
 
 before_script:
-  - yarn install
+  - npm ci
 
 stages:
   - test 
@@ -16,13 +16,13 @@ stages:
 lint:
   stage: test 
   script:
-    - yarn lint
-    - yarn lint:text
+    - npm run lint
+    - npm run lint:text
 
 build:
   stage: build
   script:
-    - yarn build
+    - npm run build
   artifacts:
     expire_in: '1 week'
     paths:
