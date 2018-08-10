@@ -8,16 +8,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-let css
-if (process.env.NODE_ENV === 'production') {
-  css = (
-    <style dangerouslySetInnerHTML={{
-      // eslint-disable-next-line import/no-webpack-loader-syntax
-      __html: require('!raw!../public/styles.css') }}
-    />
-  )
-}
-
 export default function HTML(props) {
   const {
     headComponents,
@@ -33,7 +23,6 @@ export default function HTML(props) {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=5.0" />
-        {css}
         {headComponents}
         <link rel="author" href="/humans.txt"/>
         {title.toComponent()}
