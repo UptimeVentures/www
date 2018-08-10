@@ -14,7 +14,6 @@ import Page from '../components/Page'
 import Navigation from '../components/Navigation'
 import Attribution from '../components/Attribution'
 import PageContent from '../components/Content'
-import SharePanel from '../components/SharePanel'
 import FeaturedImage from '../components/FeaturedImage'
 import SubscriptionForm from '../components/SubscriptionForm'
 import toAbsolute from '../util/toAbsolute'
@@ -128,7 +127,6 @@ export default function PostTemplate({ data }) {
           <Meta>
             Published on <time dateTime={rawDate}>{date}</time> / Authored by <Attribution authors={authors}/>
           </Meta>
-          <SharePanel title={title} url={canonical}/>
           {hasFeature ? (
             <FeaturedImage
               {...hasFeature.resolutions}
