@@ -82,7 +82,7 @@ module.exports = {
         background_color: 'white',
         theme_color: 'white',
         display: 'minimal-ui',
-        icon: 'static/logo.svg',
+        icon: 'static/logo.png',
       },
     },
     'gatsby-plugin-offline',
