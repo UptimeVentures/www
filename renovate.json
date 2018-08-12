@@ -6,5 +6,6 @@
     "deps"
   ],
   "rebaseStalePrs": true,
-  "automerge": true
+  "automerge": true,
+  "assignees": ["nicholasyoung"]
 }
