@@ -20,6 +20,7 @@ node_modules/
 public/
 .gatsby-context.js
 .cache
+yarn.lock
 
 # IDE specific
 .vscode/
