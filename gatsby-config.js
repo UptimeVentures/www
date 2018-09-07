@@ -60,6 +60,7 @@ module.exports = {
     },
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-flow',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-typography',
