@@ -63,7 +63,7 @@ async function run() {
   }
 
   const output = template(safeDump(attrs))
-  const root = pluralize(layout)
+  const root = pluralize(layout) + '/_drafts'
 
   const filePath = assets
     ? resolve(__dirname, contentPath, root, slug, 'index.md')
