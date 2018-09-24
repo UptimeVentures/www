@@ -74,6 +74,7 @@ module.exports = {
         trackingId: 'UA-104028789-1',
       },
     },
+    /*
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -86,6 +87,7 @@ module.exports = {
         icon: 'static/logo.png',
       },
     },
+    */
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
