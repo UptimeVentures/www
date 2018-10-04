@@ -17,7 +17,7 @@
     "@uptimeventures/ufs-react": "0.4.1",
     "absolutify": "0.1.0",
     "babel-core": "6.26.3",
-    "babel-eslint": "9.0.0",
+    "babel-eslint": "10.0.1",
     "babel-jest": "23.4.2",
     "babel-plugin-styled-components": "1.8.0",
     "date-fns": "1.29.0",
