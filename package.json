@@ -12,7 +12,7 @@
     "@babel/preset-env": "7.1.0",
     "@babel/preset-flow": "7.0.0",
     "@babel/preset-react": "7.0.0",
-    "@uptimeventures/gatsby-source-rss": "0.2.0",
+    "@uptimeventures/gatsby-source-rss": "0.3.0",
     "@uptimeventures/ufs-dom": "0.4.0",
     "@uptimeventures/ufs-react": "0.4.1",
     "absolutify": "0.1.0",
