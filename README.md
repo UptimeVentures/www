@@ -1,4 +1,4 @@
-# uptime.ventures
+# Uptime Ventures
 
 [![CI Status
 Badge](https://gitlab.com/uptimeventures/www/badges/master/build.svg)](https://gitlab.com/uptimeventures/www)
