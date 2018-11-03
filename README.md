@@ -7,6 +7,21 @@ badge](https://img.shields.io/badge/made_by-Uptime_Ventures-fcb040.svg)](https:/
 This repo contains the website assets for
 [uptime.ventures](https://www.uptime.ventures).
 
+## Is this site "open source"?
+
+The source is available, as you've probably noted. However, the source code (in
+addition to articles, images and other content within this repo) isn't "open" as
+you might expect.
+
+Our team has decided to publish the source code to uptime.ventures for one
+simple reason: education. As sites and applications built for the web grow in
+complexity, new developers will need on-ramps to speed their access to
+education. Opening our site's source code is one effort towards that end.
+
+**Republishing articles (either whole or in-part) or displaying the Uptime
+Ventures logo without permission is explicitly prohibited.** Linking is cool,
+but please don't steal.
+
 ### Getting Started
 
 To begin, install all dependencies like usual. This project is preconfigured to use `npm`.
