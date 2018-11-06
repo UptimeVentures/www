@@ -5,7 +5,7 @@
  * @flow
  */
 
-const url = require('url')
+const URL = require('url').URL
 const absolutify = require('absolutify')
 const humanizeList = require('humanize-list')
 
@@ -143,7 +143,7 @@ module.exports = {
                 title: siteMetadata.title,
                 description: siteMetadata.description,
                 site_url: siteMetadata.siteUrl,
-                feed_url: url.resolve(siteMetadata.siteUrl, '/blog/feed.xml'),
+                feed_url: new URL('/blog/feed.xml', siteMetadata.siteUrl).toString(),
               }
             },
             serialize({ query: { site, blog } }) {
@@ -161,18 +161,13 @@ module.exports = {
 }
 
 function intoFeedItem(n, site) {
+  const fullURL = new URL(n.fields.slug, site.siteMetadata.siteUrl).toString()
   return {
     title: n.frontmatter.title,
     description: n.excerpt,
     custom_elements: [{ 'content:encoded': absolutify(n.html, site.siteMetadata.siteUrl) }],
-    url: url.resolve(
-      site.siteMetadata.siteUrl,
-      n.fields.slug
-    ),
-    guid: url.resolve(
-      site.siteMetadata.siteUrl,
-      n.fields.slug
-    ),
+    url: fullURL,
+    guid: fullURL,
     categories: n.frontmatter.categories || [],
     author: humanizeList(n.frontmatter.authors, {
       oxfordComma: true,
