@@ -20,9 +20,11 @@ simple reason: education. As sites and applications built for the web grow in
 complexity, new developers will need on-ramps to speed their access to
 education. Opening our site's source code is one effort towards that end.
 
-**Republishing articles (either whole or in-part) or displaying the Uptime
-Ventures logo without permission is explicitly prohibited.** Linking is cool,
-but please don't steal.
+Please, look and learn; copy and paste a React component or section of CSS and
+adapt it to become your own. However, **republishing articles (either whole or
+in-part) or displaying the Uptime Ventures logo without permission is
+explicitly prohibited.** Linking is cool, but don't steal our site design or
+article content.
 
 ## Getting Started
 
