@@ -1,20 +1,16 @@
----
-title: Introducing Uptime Ventures
-authors:
-  - Nicholas Young
-layout: post
-draft: false 
-date: 2017-08-02
-illustration: feature.jpg
-illustrationDescription: 'The upward arrow logomark of Uptime Ventures superimposed over a stylized older building in Denver, Colorado, USA'
-caption: 'Image courtesy of Unsplash'
-categories:
-  - Launches
-  - Branding
-keywords:
-  - introductions
-  - mission
----
++++
+authors = ["Nicholas Young"]
+caption = "Image courtesy of Unsplash"
+categories = ["Launches", "Branding"]
+date = "2017-08-02"
+draft = false
+illustration = "feature.jpg"
+illustrationDescription = "The upward arrow logomark of Uptime Ventures superimposed over a stylized older building in Denver, Colorado, USA"
+keywords = ["introductions", "mission"]
+layout = "post"
+title = "Introducing Uptime Ventures"
+
++++
 I've thought a lot, probably too much, about what it feels like begin a new project. When fueled by passion, the spark of inspiration can grow quickly into a roaring fire. Those moments are often unforgettable, but it's critical to remember what matters most is the work ahead. Inspiration is a pointless, momentary high unless you follow though.
 
 Last year, after much deliberation, my family and I decided to move west, trading the expansive Chicagoland metro for the smaller (but rapidly expanding) Denver, Colorado. What I expected was to simply move my existing consultancy, Until Now, across state lines. Operations, I assumed, would remain essentially unchanged. We would continue work as a client services company, delivering React and JavaScript expertise to anyone who needed it. I would buckle down, launch our first real website, and procure a stable of local clients.

@@ -1,21 +1,16 @@
----
-title: Creating Elegant Forms with UFS
-authors:
-  - Nicholas Young
-layout: post
-date: 2018-03-28
-draft: false
-categories:
-  - React
-  - Form Validation
-  - Front-End Engineering
-keywords:
-  - reactjs
-  - ultimate form system
-illustration: feature.jpg
-illustrationDescription: 'A laptop, sitting on a desk, with code on its screen.'
-caption: 'Image courtesy of Fabian Grohs on Unsplash'
----
++++
+authors = ["Nicholas Young"]
+caption = "Image courtesy of Fabian Grohs on Unsplash"
+categories = ["React", "Form Validation", "Front-End Engineering"]
+date = "2018-03-28"
+draft = false
+illustration = "feature.jpg"
+illustrationDescription = "A laptop, sitting on a desk, with code on its screen."
+keywords = ["reactjs", "ultimate form system"]
+layout = "post"
+title = "Creating Elegant Forms with UFS"
+
++++
 Ask any frontend web developer: forms can be notoriously difficult. You have
 to keep up with filled and unfilled fields, which of them are valid, display
 errors when your users invariably attempt to enter invalid data, and depending

@@ -1,18 +1,15 @@
----
-title: 'Designing In The Open'
-authors:
-  - Nicholas Young
-layout: post
-date: 2018-03-11
-categories:
-  - Open Design
-  - View Source
-illustration: feature.jpg
-illustrationDescription: 'Workers holding a planning session with coffee around a worktable covered
-in a map, laptop, camera, and small potted succulents.'
-caption: 'Image courtesy of @rawpixel on Unsplash'
-draft: false 
----
++++
+authors = ["Nicholas Young"]
+caption = "Image courtesy of @rawpixel on Unsplash"
+categories = ["Open Design", "View Source"]
+date = "2018-03-11"
+draft = false
+illustration = "feature.jpg"
+illustrationDescription = "Workers holding a planning session with coffee around a worktable covered in a map, laptop, camera, and small potted succulents."
+layout = "post"
+title = "Designing In The Open"
+
++++
 As artists mature, a critical phase is growing comfortable with showing our work. Despite the fact that artists who design for web audiences hit this stage even faster than most, with an incoming mix of criticism on both artistic choice and functional attributes, the truth is I've been uncomfortable with this concept for years.
 
 I haven't necessarily shied away from it, though. Releasing once-internal code as open source was critical in my past work, and continues to be a priority here at [Uptime Ventures.][uv] Still, I believe there is more we can do. With the rise of developer quickstart programs, it feels like knowledge is to be extracted and offered for sale.

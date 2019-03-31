@@ -1,23 +1,16 @@
----
-title: Why We're Betting on Rust
-authors:
-  - Nicholas Young
-layout: post
-date: 2018-04-02
-draft: false
-illustration: feature.jpg
-illustrationDescription: 'Tangled power and data wires emerge from the
-rear ports of a server, installed in its rack.'
-caption: Image courtesy of Thomas Kvistholt on Unsplash
-categories:
-  - Rust
-  - Future-Proofing
-tags:
-    - rust
-    - gotham
-    - tokio
-    - future-proofing
----
++++
+authors = ["Nicholas Young"]
+caption = "Image courtesy of Thomas Kvistholt on Unsplash"
+categories = ["Rust", "Future-Proofing"]
+date = "2018-04-02"
+draft = false
+illustration = "feature.jpg"
+illustrationDescription = "Tangled power and data wires emerge from the rear ports of a server, installed in its rack."
+layout = "post"
+tags = ["rust", "gotham", "tokio", "future-proofing"]
+title = "Why We're Betting on Rust"
+
++++
 Twenty-eighteen marks my seventeenth annual tour as a professional software engineer. I say "annual tour" because it feels like each year is uniquely challenging yet practiced, much in the same way a cycle race is a planned event, but still presents unexpected hurdles to be cleared. In that time, I've learned one lesson; that our industry is in a constant state of flux. Always. It has been so since the beginning.
 
 Considering how the state of our art is ever changing, I re-evaluate which tools belong in my box of gizmos each year as well. In the past, I've employed [nginx][nginx] as a high-performance cache and proxy, but it has been largely edged out by [Envoy][envoy], which touts a *hybrid [non-blocking][el]* event model and has become wildly successful after being [released in 2016][envoy-release]. That very same principle, *[event-driven][el] [I/O][io]*, is the same reason I chose [Node.js][nodejs] for most of the APIs I've developed since 2011. Even if practices change, we retain successful engineering models.
