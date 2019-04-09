@@ -1,0 +1,36 @@
+baseURL = "https://www.uptime.ventures/"
+disableHugoGeneratorInject = true 
+languageCode = "en-us"
+title = "Uptime Ventures"
+theme = "uptime"
+copyright = "2019 Uptime Ventures, Ltd. All rights reserved."
+ignoreFiles = ["README.md"]
+
+[params]
+author = "UV Digital Team"
+description = "News, inspiration, and education from Uptime Ventures."
+
+[imaging]
+quality = 75
+
+[outputs]
+home = ["html"]
+page = ["html"]
+section = ["rss", "jsonfeed"]
+taxonomy = ["html", "rss", "jsonfeed"]
+taxonomyTerm = ["html", "rss", "jsonfeed"]
+
+[outputFormats]
+[outputFormats.rss]
+baseName = "feed"
+
+[outputFormats.jsonfeed]
+baseName = "feed"
+mediaType = "application/json"
+
+[permalinks]
+blog = "/blog/:year/:month/:day/:slug/"
+category = "/blog/category/:slug/"
+
+[taxonomies]
+category = "category"

@@ -1,3 +1,7 @@
 [build]
 publish = "public"
-command = "npm run build"
+command = "hugo"
+environment = { HUGO_VERSION = "0.54.0", RUBY_VERSION = "2.6.2" }
+
+[context.deploy-preview]
+command = "hugo -b $DEPLOY_PRIME_URL/"

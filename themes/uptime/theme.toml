@@ -1,0 +1,10 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "uptime"
+license = "All rights reserved"
+description = "a custom theme for uptime.ventures"
+
+[author]
+  name = "UV Digital Team"
+  homepage = "https://www.uptime.ventures"

@@ -15,18 +15,23 @@ I've thought a lot, probably too much, about what it feels like begin a new proj
 
 Last year, after much deliberation, my family and I decided to move west, trading the expansive Chicagoland metro for the smaller (but rapidly expanding) Denver, Colorado. What I expected was to simply move my existing consultancy, Until Now, across state lines. Operations, I assumed, would remain essentially unchanged. We would continue work as a client services company, delivering React and JavaScript expertise to anyone who needed it. I would buckle down, launch our first real website, and procure a stable of local clients.
 
-I was [following though on the goals](https://www.nicholaswyoung.com/2016/01/be-kind-rewind/) laid out in early 2016 when I recommitted to work as a full-time consultant. Or so I thought.
+I was [following though on the goals](https://www.secretfader.com/blog/2016/01/be-kind-rewind/) laid out in early 2016 when I recommitted to work as a full-time consultant. Or so I thought.
 
 ## Reinvention
 
-Within six months of moving, my personal life changed drastically as the genetic condition I've battled daily finally [caught up with me,](https://www.nicholaswyoung.com/tags/chronic-illness/) creating symptoms I could no longer ignore. Instead of pouring energy into finding customers and re-launching my consultancy in a new city, I was searching for doctors instead. It wasn't long before the hours required to operate as a one-man client-services agency became too much.
+Within six months of moving, my personal life changed drastically as the genetic condition I've battled daily finally [caught up with me,](https://www.secretfader.com/blog/tag/chronic-illness/) creating symptoms I could no longer ignore. Instead of pouring energy into finding customers and re-launching my consultancy in a new city, I was searching for doctors instead. It wasn't long before the hours required to operate as a one-man client-services agency became too much.
 
 I stopped talking about projects in public because I didn't know when, or if, I could finish them.
 
 Now in 2017, my recovery is well underway, but the lessons I learned while trying to handle client requests and manage a grueling medical schedule have taught me much. In fact, they're baked into our [founding mission](/mission/) here at Uptime Ventures. These ideals are evident in our focus on internal projects, honing skills and products for small communities through continuous delivery before releasing our ideas into the wider world.
 
-![Various in-progress renditions off the Uptime Ventures arrow logomark in black, red, green, blue, and finally,
-the official yellow.](artboard.png)
+<figure>
+{{< imgresize src="artboard.png" width="x800" alt="Logo variations." >}}
+<figcaption>
+Various in-progress renditions off the Uptime Ventures arrow logomark in black, red, green, blue, and finally,
+the official yellow.
+</figcaption>
+</figure>
 
 While the expertise I've developed over years of consulting on diverse hardware systems running a plethora of languages will certainly be available to our clients, Uptime Ventures' main focus will be to find and exploit markets where applied technology can be maximally effective, choosing instead to operate as a trusted partner rather than a purely contract development team.
 

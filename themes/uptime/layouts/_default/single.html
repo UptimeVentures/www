@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<article class="post">
+  <header class="post-header">
+    <a class="post-link" href="{{ .Permalink }}">
+      <h1 class="post-title">{{ .Title }}</h1>
+    </a>
+    <span class="post-meta">
+      {{- if or .Params.author .Site.Params.author -}}
+      {{ .Params.author | default .Site.Params.author }} &middot; {{ end }}
+      <time dateTime="{{ .Date }}">
+      {{- .Date.Format "2006.01.02" -}}
+      <time>
+    </span>
+  </header>
+  <div class="post-content">{{ .Content }}</div>
+</article>
+{{ partial "footer.html" . }}

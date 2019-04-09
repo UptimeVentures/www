@@ -24,3 +24,7 @@ yarn.lock
 
 # IDE specific
 .vscode/
+
+# Generated website resources
+resources/
+themes/**/resources/

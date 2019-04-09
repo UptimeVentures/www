@@ -1,0 +1,46 @@
+{{ partial "header.html" . }}
+{{ if not .IsHome }}
+<header class="list-header">
+  {{ if eq .Data.Singular "tag" -}}
+    <h1 class="list-title">{{ .Data.Term }}</h1>
+  {{ else if eq .Data.Singular "category" -}}
+    <h1 class="list-title">{{ .Data.Term }}</h1>
+  {{ else if eq .Page.Kind "section" -}}
+    <h1 class="list-title">{{ .Title }}</h1>
+  {{ end }}
+</header>
+{{ end }}
+
+{{ $paginator := .Paginate (where .Pages ".Params.type" "!=" "page") (index .Site.Params "paginate" | default 10) }}
+{{ if gt $paginator.TotalPages 0 }}
+{{ range $index, $page := $paginator.Pages }}
+<article class="post post-entry">
+  <header class="post-header">
+    <a class="post-link" href="{{ .Permalink }}">
+      <h2 class="post-title">{{ .Title }}</h2>
+    </a>
+  </header>
+  <p class="post-summary">
+    {{ .Summary | plainify | htmlUnescape }}...
+  </p>
+  <footer class="post-footer">
+    <span class="post-meta">
+      {{ .Date.Format "2006.1.2" }}
+    </span>
+  </footer>
+</article>
+{{ end }}
+{{ end }}
+{{ if gt $paginator.TotalPages 1 }}
+<footer class="list-footer">
+  <nav class="pagination">
+    {{ if $paginator.HasPrev }}
+    <a class="pagination-prev" href="{{ $paginator.Prev.URL }}">&larr; {{ i18n "prevPage" }}</a>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <a class="pagination-next" href="{{ $paginator.Next.URL }}">{{ i18n "nextPage" }} &rarr;</a>
+    {{ end }}
+  </nav>
+</footer>
+{{ end }}
+{{ partial "footer.html" . }}
