@@ -1,5 +1,4 @@
 +++
-authors = ["Nicholas Young"]
 caption = "Image courtesy of Fabian Grohs on Unsplash"
 categories = ["React", "Form Validation", "Front-End Engineering"]
 date = "2018-03-28"
@@ -9,7 +8,7 @@ illustrationDescription = "A laptop, sitting on a desk, with code on its screen.
 keywords = ["reactjs", "ultimate form system"]
 layout = "post"
 title = "Creating Elegant Forms with UFS"
-
+author = "Nicholas Young"
 +++
 Ask any frontend web developer: forms can be notoriously difficult. You have
 to keep up with filled and unfilled fields, which of them are valid, display
