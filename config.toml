@@ -29,7 +29,7 @@ baseName = "feed"
 mediaType = "application/json"
 
 [permalinks]
-blog = "/blog/:year/:month/:day/:slug/"
+blog = "/blog/:year/:month/:slug/"
 category = "/blog/category/:slug/"
 
 [taxonomies]
