@@ -1,5 +1,6 @@
 </main>
 <script src="{{.Site.BaseURL}}js/highlight.min.js" data-no-instant></script>
+{{- if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
 <script>
 (function(f, a, t, h, o, m){
 	a[h]=a[h]||function(){
@@ -13,5 +14,6 @@
 fathom('set', 'siteId', 'JBRKL');
 fathom('trackPageview');
 </script>
+{{ end }}
 </body>
 </html>
