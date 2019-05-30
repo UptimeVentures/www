@@ -1,29 +1,13 @@
-image: node:latest
-
-cache:
-  key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
-
-variables:
-  CI: 'true'
-
-before_script:
-  - npx npm-merge-driver install --global
-  - npm ci
+image: ubuntu:bionic
 
 stages:
-  - test 
   - build
-
-lint:
-  stage: test 
-  script:
-    - npm run lint
-    - npm run lint:text
 
 build:
   stage: build
   script:
-    - npm run build
+    - bash setup.sh
+    - hugo
   artifacts:
     expire_in: '1 week'
     paths:
