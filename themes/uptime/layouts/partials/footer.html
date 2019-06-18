@@ -1,19 +1,6 @@
 </main>
 <script src="{{.Site.BaseURL}}js/highlight.min.js" data-no-instant></script>
 {{- if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-<script>
-(function(f, a, t, h, o, m){
-	a[h]=a[h]||function(){
-		(a[h].q=a[h].q||[]).push(arguments)
-	};
-	o=f.createElement('script'),
-	m=f.getElementsByTagName('script')[0];
-	o.async=1; o.src=t; o.id='fathom-script';
-	m.parentNode.insertBefore(o,m)
-})(document, window, '//fathom.uptime.ventures/tracker.js', 'fathom');
-fathom('set', 'siteId', 'JBRKL');
-fathom('trackPageview');
-</script>
 {{ end }}
 </body>
 </html>
