@@ -272,6 +272,7 @@ body.single figure img {
 @media screen and (max-width: 800px) {
   body.home .introduction {
     margin-bottom: 2em;
+    height: 70vh;
   }
 
   body.home .introduction p {
