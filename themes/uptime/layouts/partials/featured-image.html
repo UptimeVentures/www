@@ -1,0 +1,16 @@
+{{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
+<figure>
+{{ with $img }}
+  {{ $big := $img.Resize "x800" }}
+  {{ $small := $big.Resize "x512" }}
+  <img
+    alt="{{ $img.Title }}"
+    src="{{ $big.RelPermalink }}"
+    srcset="{{ $small.RelPermalink }} 512w, {{ $big.RelPermalink }} 1024w"
+    sizes="(min-width: 1570px) 822px, (max-width: 1569px) and (min-width: 960px) 50vw, 93vw"
+    width="{{ $big.Width }}"
+    class="featured"
+  >
+{{ end }}
+<figcaption>{{ .Params.IllustrationDescription }}</figcaption>
+</figure>
