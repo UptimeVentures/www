@@ -39,14 +39,14 @@
 </head>
 <body class="{{if eq .Kind `page` }}single{{else}}list{{ if .IsHome }} home{{ end }}{{end}}">
   <header class="main">
-    <a href="{{ .Site.BaseURL }}" class="title">
+    <a href="{{ .Site.BaseURL }}" class="title" aria-label="Uptime Ventures">
       {{ if .IsHome }}
       <h1>{{ .Site.Title }}</h1>
       {{ else }}
       <h2>{{ .Site.Title }}</h2>
       {{ end }}
       {{ $logo := resources.Get "logo.svg" }}
-      <img src="{{ $logo.Permalink }}">
+      <img src="{{ $logo.Permalink }}" alt="Uptime Ventures logo">
     </a>
     <nav class="menu">
       <ul>
