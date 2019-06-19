@@ -253,3 +253,26 @@ body.home ul.shortlist li p {
 body.home {
   padding-bottom: 2em;
 }
+
+@media screen and (max-width: 800px) {
+  body.home .introduction {
+    margin-bottom: 2em;
+  }
+
+  body.home .introduction p {
+    line-height: 1.5em;
+  }
+
+  body.home ul.shortlist {
+    flex-direction: column;
+  }
+
+  body.home ul.shortlist li {
+    margin-right: 0;
+    margin-bottom: 1.5em;
+  }
+
+  body.home ul.shortlist li:last-child {
+    margin-bottom: 0;
+  }
+}
