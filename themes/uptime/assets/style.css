@@ -205,7 +205,7 @@ body.single main article.post .post-content pre {
 }
 
 body.home .introduction {
-  height: 85vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
