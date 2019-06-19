@@ -102,13 +102,6 @@ main {
   margin: 0 auto;
 }
 
-body.home main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 800px;
-}
-
 body.list main .list-header {
   margin: 30px 0;
 }
@@ -209,4 +202,54 @@ body.single main article.post .post-content pre {
   overflow-x: scroll;
   box-sizing: border-box;
   font-size: .9em;
+}
+
+body.home .introduction {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body.home .introduction h2 {
+  font-size: 3em;
+  margin-bottom: .2em;
+}
+
+body.home .introduction p {
+  font-size: 1.1em;
+  line-height: 2em;
+}
+
+body.home .block h3 {
+  font-size: 1.5em;
+}
+
+body.home ul.shortlist {
+  display: flex;
+  border-top: rgba(0, 0, 0, .1) 1px solid;
+  margin-top: 2em;
+  padding-top: 2em;
+}
+
+body.home ul.shortlist li {
+  margin-right: 1.5em;
+}
+
+body.home ul.shortlist li:last-child {
+  margin-right: 0;
+}
+
+body.home ul.shortlist li h4 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+body.home ul.shortlist li p {
+  font-size: .8em;
+}
+
+body.home {
+  padding-bottom: 2em;
 }

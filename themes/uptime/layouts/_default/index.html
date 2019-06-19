@@ -2,4 +2,24 @@
 <div class="introduction">
   {{ .Content }}
 </div>
+<div class="block">
+  <header>
+    <h3>Writing</h3>
+    <p>Our blog is where we share knowledge, investigate difficult technical questions, and prepare you to tackle issues of the future.</p>
+  </header>
+  <ul class="shortlist">
+    {{ with .GetPage "blog" }}
+      {{ range first 3 .Pages }}
+      <li>
+        <a href="{{ .Permalink }}">
+          <h4>{{ .Title }}</h4>
+        </a>
+        <p>
+          {{ .Summary | plainify | htmlUnescape }}...
+        </p>
+      </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>
 {{ partial "footer.html" . }}

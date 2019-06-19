@@ -5,6 +5,7 @@ title = "Uptime Ventures"
 theme = "uptime"
 copyright = "2019 Uptime Ventures, Ltd. All rights reserved."
 ignoreFiles = ["README.md"]
+summaryLength =  40
 
 [params]
 author = "UV Digital Team"
