@@ -265,7 +265,7 @@ body.single figure img {
   width: 100%;
 }
 
-body footer {
+body > footer {
   background: rgba(0, 0, 0, .8);
   color: white;
   margin-top: 4em;
@@ -276,7 +276,7 @@ body footer {
   display: flex;
 }
 
-body footer .block {
+body > footer .block {
   margin-right: 1.5em;
 
   > p {
@@ -288,16 +288,16 @@ body footer .block {
   }
 }
 
-body footer li {
+body > footer li {
   font-size: .9em;
 }
 
-body footer li span {
+body > footer li span {
   font-weight: 700;
   margin-right: .5em;
 }
 
-body footer h5 {
+body > footer h5 {
   font-size: 1.2em;
   font-weight: 700;
   border-bottom: 1px #999 solid;
