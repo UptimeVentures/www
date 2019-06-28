@@ -11,6 +11,12 @@
       <time dateTime="{{ .Date }}">
       {{- .Date.Format "2006.01.02" -}}
       <time>
+      {{ if .Param "category" }}
+      <span class="links">
+        Filed under:
+        {{ partial "categories-list.html" . }}
+      </span>
+      {{ end }}
     </span>
   </header>
   <div class="post-content">{{ .Content }}</div>
