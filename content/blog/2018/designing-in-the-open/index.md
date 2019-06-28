@@ -1,6 +1,6 @@
 +++
 caption = "Image courtesy of @rawpixel on Unsplash"
-categories = ["Open Design", "View Source"]
+category = ["Open Design", "View Source"]
 date = "2018-03-11"
 draft = false
 illustration = "feature.jpg"

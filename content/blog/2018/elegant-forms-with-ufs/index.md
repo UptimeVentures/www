@@ -1,6 +1,6 @@
 +++
 caption = "Image courtesy of Fabian Grohs on Unsplash"
-categories = ["React", "Form Validation", "Front-End Engineering"]
+category = ["React", "Form Validation", "Front-End Engineering"]
 date = "2018-03-28"
 draft = false
 illustration = "feature.jpg"
