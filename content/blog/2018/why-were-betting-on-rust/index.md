@@ -1,6 +1,6 @@
 +++
 caption = "Image courtesy of Thomas Kvistholt on Unsplash"
-category = ["Rust", "Future-Proofing"]
+category = ["rust", "future-proofing"]
 date = "2018-04-02"
 draft = false
 illustration = "feature.jpg"

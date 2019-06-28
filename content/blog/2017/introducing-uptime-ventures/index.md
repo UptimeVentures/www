@@ -1,6 +1,6 @@
 +++
 caption = "Image courtesy of Unsplash"
-category = ["Launches", "Branding"]
+category = ["launches", "branding"]
 date = "2017-08-02"
 draft = false
 illustration = "feature.jpg"
