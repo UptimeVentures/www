@@ -204,6 +204,21 @@ body.single main article.post .post-content pre {
   font-size: .9em;
 }
 
+body.single main .post-subscription {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  border-top: rgba(0, 0, 0, .3) 1px solid;
+  padding-top: 3em;
+}
+
+body.single main .post-subscription h4 {
+  font-weight: 700;
+  margin-bottom: .5em;
+  font-size: 1.4em;
+}
+
 body.home .introduction {
   height: 85vh;
   display: flex;

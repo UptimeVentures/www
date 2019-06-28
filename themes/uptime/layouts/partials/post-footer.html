@@ -1,0 +1,10 @@
+<div class="post-subscription">
+  <h4>If you enjoyed this post, subscribe!</h4>
+  {{ with .Site.GetPage "section" "blog/_index.md" }}
+    {{ $rss := .OutputFormats.Get "rss" }}
+    {{ $json := .OutputFormats.Get "jsonfeed" }}
+  <p>
+    The Uptime Ventures Blog offers both <a href="{{ $rss.Permalink | safeURL }}">RSS</a> and <a href="{{ $json.Permalink | safeURL }}">JSON</a> feed subscriptions.
+  </p>
+  {{ end }}
+</div>
