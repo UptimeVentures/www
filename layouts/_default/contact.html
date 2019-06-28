@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+<div class="content contact">
+  <div class="prelude">
+    {{ .Content }}
+  </div>
+  <form method="POST" action="/contact?code=success" data-netlify="true">
+    <p>
+      <label>
+        Name
+        <input type="text" name="name"/>
+      </label>
+    </p>
+    <p>
+      <label>
+        Email
+        <input type="email" name="email"/>
+      </label>
+    </p>
+    <p>
+      <label>
+        How can we help?
+        <textarea name="needs"></textarea>
+      </label>
+    </p>
+    <button>Submit</button>
+  </form>
+</div>
+{{ partial "footer.html" . }}
