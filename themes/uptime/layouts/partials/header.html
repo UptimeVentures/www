@@ -48,8 +48,20 @@
       {{ else }}
       <h2>{{ .Site.Title }}</h2>
       {{ end }}
-      {{ $logo := resources.Get "logo.svg" }}
-      <img src="{{ $logo.Permalink }}" alt="Uptime Ventures logo">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 249.57 181.7"
+        class="logo"
+      >
+        <polygon
+          fill="#f7941d"
+          points="124.78 126.64 0 181.7 0 55.05 124.78 0 124.78 126.64"
+        />
+        <polygon
+          fill="#fbb040"
+          points="249.57 55.05 124.78 0 124.78 126.64 249.57 181.7 249.57 55.05"
+         />
+      </svg>
     </a>
     <nav class="menu">
       <ul>

@@ -96,6 +96,11 @@ header.main nav.menu ul li:last-child {
   }
 }
 
+svg.logo {
+  width: auto;
+  height: 40px;
+}
+
 /* Main content */
 main {
   width: 90%;
