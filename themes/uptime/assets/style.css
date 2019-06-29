@@ -302,6 +302,16 @@ body > footer .grid {
 body > footer .credits {
   font-size: .8em;
   margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+body > footer .credits a {
+  margin-right: 1em;
+}
+
+body > footer .credits a:last-child {
+  margin-right: 0;
 }
 
 body > footer .grid .block {
