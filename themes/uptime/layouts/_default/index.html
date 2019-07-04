@@ -14,7 +14,7 @@
         {{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
         <a href="{{ .Permalink }}">
           {{ with $img }}
-            {{ $resized := $img.Fill "300x200" }}
+            {{ $resized := $img.Fill "300x200 Center" }}
             <img src="{{ $resized.Permalink }}" alt="">
           {{ end }}
           <h4>{{ .Title }}</h4>

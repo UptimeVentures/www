@@ -1,8 +1,8 @@
 {{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
 <figure>
 {{ with $img }}
-  {{ $big := $img.Fill "800x600" }}
-  {{ $small := $big.Fill "500x375" }}
+  {{ $big := $img.Fill "800x600 Center" }}
+  {{ $small := $big.Fill "500x375 Center" }}
   <img
     alt="{{ $img.Title }}"
     src="{{ $big.RelPermalink }}"
