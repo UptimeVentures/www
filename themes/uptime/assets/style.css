@@ -260,6 +260,10 @@ body.home ul.shortlist li:last-child {
   margin-right: 0;
 }
 
+body.home ul.shortlist img {
+  margin-bottom: .5em;
+}
+
 body.home ul.shortlist li h4 {
   font-size: 1em;
   font-weight: 700;
