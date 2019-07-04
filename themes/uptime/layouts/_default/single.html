@@ -11,7 +11,7 @@
       <time dateTime="{{ .Date }}">
       {{- .Date.Format "2006.01.02" -}}
       <time>
-      {{ if .Param "category" }}
+      {{ if .Param "categories" }}
       <span class="links">
         Filed under:
         {{ partial "categories-list.html" . }}

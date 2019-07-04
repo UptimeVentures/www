@@ -34,4 +34,4 @@ blog = "/blog/:year/:month/:slug/"
 category = "/blog/category/:slug/"
 
 [taxonomies]
-category = "category"
+category = "categories"
