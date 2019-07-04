@@ -8,7 +8,7 @@ illustrationDescription = "Tangled power and data wires emerge from the rear por
 layout = "post"
 tags = ["rust", "gotham", "tokio", "future-proofing"]
 title = "Why We're Betting on Rust"
-author = "Nicholas Young"
+authors = ["Nicholas Young"]
 +++
 Twenty-eighteen marks my seventeenth annual tour as a professional software engineer. I say "annual tour" because it feels like each year is uniquely challenging yet practiced, much in the same way a cycle race is a planned event, but still presents unexpected hurdles to be cleared. In that time, I've learned one lesson; that our industry is in a constant state of flux. Always. It has been so since the beginning.
 

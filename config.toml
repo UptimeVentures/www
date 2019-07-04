@@ -8,7 +8,7 @@ ignoreFiles = ["README.md"]
 summaryLength =  40
 
 [params]
-author = "UV Digital Team"
+authors = ["UV Digital Team"]
 description = "News, inspiration, and education from Uptime Ventures."
 
 [imaging]
@@ -31,7 +31,9 @@ mediaType = "application/json"
 
 [permalinks]
 blog = "/blog/:year/:month/:slug/"
-category = "/blog/category/:slug/"
+categories = "/blog/category/:slug/"
+authors = "/blog/author/:slug/"
 
 [taxonomies]
 category = "categories"
+author = "authors"

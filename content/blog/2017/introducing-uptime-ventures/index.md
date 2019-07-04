@@ -8,7 +8,7 @@ illustrationDescription = "The upward arrow logomark of Uptime Ventures superimp
 keywords = ["introductions", "mission"]
 layout = "post"
 title = "Introducing Uptime Ventures"
-author = "Nicholas Young"
+authors = ["Nicholas Young"]
 +++
 I've thought a lot, probably too much, about what it feels like begin a new project. When fueled by passion, the spark of inspiration can grow quickly into a roaring fire. Those moments are often unforgettable, but it's critical to remember what matters most is the work ahead. Inspiration is a pointless, momentary high unless you follow though.
 

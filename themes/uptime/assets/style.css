@@ -343,12 +343,12 @@ body > footer h5 {
   padding-bottom: .5em;
 }
 
-body.single main article.post .post-meta ul.post-categories {
+body.single main article.post .post-meta ul.post-categories, ul.post-authors {
   display: inline-block;
   margin-left: .5em;
 }
 
-body.single main article.post .post-meta ul.post-categories li {
+body.single main article.post .post-meta ul.post-categories li, ul.post-authors li {
   display: inline-block;
 }
 

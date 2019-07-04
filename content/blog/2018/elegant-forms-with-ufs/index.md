@@ -8,7 +8,7 @@ illustrationDescription = "A laptop, sitting on a desk, with code on its screen.
 keywords = ["reactjs", "ultimate form system"]
 layout = "post"
 title = "Creating Elegant Forms with UFS"
-author = "Nicholas Young"
+authors = ["Nicholas Young"]
 +++
 Ask any frontend web developer: forms can be notoriously difficult. You have
 to keep up with filled and unfilled fields, which of them are valid, display

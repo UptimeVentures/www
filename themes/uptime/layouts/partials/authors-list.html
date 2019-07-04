@@ -1,0 +1,12 @@
+{{ $taxonomy := "authors" }}
+{{ with .Param $taxonomy }}
+<ul class="post-authors">
+  {{ range $index, $author := . }}
+  {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $author | urlize) -}}
+  <li>
+    <a href="{{ .Permalink }}">{{ $author }}</a>
+  </li>
+  {{- end -}}
+  {{- end -}}
+</ul>
+{{ end }}
