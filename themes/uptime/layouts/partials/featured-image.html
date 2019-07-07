@@ -1,12 +1,13 @@
 {{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
 <figure>
 {{ with $img }}
-  {{ $big := $img.Fill "800x600 Center q90" }}
+  {{ $big := $img.Fill "1600x900 Center q90" }}
+  {{ $med := $img.Fill "800x450 Center q90" }}
   {{ $small := $big.Fill "500x375 Center q90" }}
   <img
     alt="{{ $img.Title }}"
     src="{{ $big.RelPermalink }}"
-    srcset="{{ $small.RelPermalink }} 500w, {{ $big.RelPermalink }} 1024w"
+    srcset="{{ $small.RelPermalink }} 500w, {{ $med.RelPermalink }} 800w, {{ $big.RelPermalink }} 1600w"
     sizes="(min-width: 1570px) 800vw, (max-width: 1569px) and (min-width: 960px) 50vw, 93vw"
     width="{{ $big.Width }}"
     class="featured"
