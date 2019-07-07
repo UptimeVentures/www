@@ -5,23 +5,23 @@
     <a class="post-link" href="{{ .Permalink }}">
       <h1 class="post-title">{{ .Title }}</h1>
     </a>
-    <span class="post-meta">
-      <time dateTime="{{ .Date }}">
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
       {{- .Date.Format "2006.01.02" -}}
-      <time>
+      </time>
       {{- if .Param "authors" -}}
-      <span class="links">
-        Authored by:
+      <div class="links">
+        <span>Authored by:</span>
         {{ partial "authors-list" . }}
-      </span>
+      </div>
       {{ end }}
       {{ if .Param "categories" }}
-      <span class="links">
-        Filed under:
+      <div class="links">
+        <span>Filed under:</span>
         {{ partial "categories-list.html" . }}
-      </span>
+      </div>
       {{ end }}
-    </span>
+    </div>
   </header>
   <div class="post-content">{{ .Content }}</div>
 </article>
