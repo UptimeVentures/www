@@ -14,8 +14,15 @@
         {{ $img := (.Resources.ByType "image").GetMatch "*feature*" }}
         <a href="{{ .Permalink }}">
           {{ with $img }}
-            {{ $resized := $img.Fill "300x200 Center" }}
-            <img src="{{ $resized.Permalink }}" alt="">
+            {{ $sm := $img.Fill "300x200 Center" }}
+            {{ $lg := $img.Fill "600x337 Center" }}
+            <img
+              alt="{{ $img.Title }}"
+              src="{{ $lg.RelPermalink }}"
+              srcset="{{ $sm.RelPermalink }} 300w, {{ $lg.RelPermalink }} 600w"
+              sizes="(min-width: 1570px) 300vw, (max-width: 1569px) and (min-width: 960px) 50vw, 93vw"
+              width="{{ $sm.Width }}"
+            >
           {{ end }}
           <h4>{{ .Title }}</h4>
         </a>
