@@ -406,26 +406,6 @@ body.single main article.post .post-meta span.links {
   padding: 1em;
 }
 
-@media screen and (max-width: 800px) {
-  body.home .introduction {
-    height: 70vh;
-    margin-bottom: 2em;
-  }
-
-  body.home ul.shortlist {
-    flex-direction: column;
-  }
-
-  body.home ul.shortlist li {
-    margin-right: 0;
-    margin-bottom: 1.5em;
-  }
-
-  body.home ul.shortlist li:last-child {
-    margin-bottom: 0;
-  }
-}
-
 ul.share-buttons {
   font-size: .9em;
   max-width: 800px;
@@ -437,13 +417,12 @@ ul.share-buttons {
 }
 
 ul.share-buttons li {
-  max-width: 300px;
+  width: 30%;
   margin-right: 15px;
   margin-bottom: 15px; 
   border-radius: 5px;
   border: rgba(0, 0, 0, .1) 1px solid;
 }
-
 
 ul.share-buttons a {
   display: flex;
@@ -489,6 +468,14 @@ ul.share-buttons li.email:hover {
   background: #5e5e5e;
 }
 
+ul.share-buttons li.telegram {
+  background: #0088cc;
+}
+
+ul.share-buttons li.telegram:hover {
+  background: #006394;
+}
+
 ul.share-buttons li.whatsapp {
   background: #25d366;
 }
@@ -505,3 +492,26 @@ ul.share-buttons li.linkedin:hover {
   background: #046293;
 }
 
+@media screen and (max-width: 800px) {
+  body.home .introduction {
+    height: 70vh;
+    margin-bottom: 2em;
+  }
+
+  body.home ul.shortlist {
+    flex-direction: column;
+  }
+
+  body.home ul.shortlist li {
+    margin-right: 0;
+    margin-bottom: 1.5em;
+  }
+
+  body.home ul.shortlist li:last-child {
+    margin-bottom: 0;
+  }
+
+  ul.share-buttons li {
+    width: 75%;
+  }
+}
