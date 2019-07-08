@@ -226,9 +226,15 @@ body.single main .post-subscription h4 {
 
 body.home .introduction {
   height: 85vh;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+body.home > .block {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body.home .introduction h2 {
