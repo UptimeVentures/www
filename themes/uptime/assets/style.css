@@ -441,6 +441,7 @@ ul.share-buttons li {
   margin-right: 15px;
   margin-bottom: 15px; 
   border-radius: 5px;
+  border: rgba(0, 0, 0, .1) 1px solid;
 }
 
 
@@ -449,6 +450,7 @@ ul.share-buttons a {
   justify-content: center;
   padding: 10px;
   color: white;
+  text-decoration: none;
 }
 
 ul.share-buttons svg {
@@ -499,7 +501,7 @@ ul.share-buttons li.linkedin {
   background: #0077b5;
 }
 
-ul.share-button.linkedin:hover {
+ul.share-buttons li.linkedin:hover {
   background: #046293;
 }
 
