@@ -1,3 +1,5 @@
+{{ $summary := printf "%s on Secret Fader:" .Title | querify "" }}
+{{ $tagged_summary := printf "%s on @SecretFader:" .Title | querify "" }}
 <ul class="share-buttons">
   <li class="facebook">
     <a href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}"
@@ -13,7 +15,7 @@
     </a>
   </li>
   <li class="twitter">
-    <a href="https://twitter.com/intent/tweet/?text={{ .Title }} on @UptimeVentures:&amp;url={{ .Permalink }}"
+    <a href="https://twitter.com/intent/tweet/?text={{ $tagged_summary }}&url={{ .Permalink }}"
        target="_blank"
        rel="noopener"
     >
@@ -26,7 +28,7 @@
     </a>
   </li>
   <li class="email">
-    <a href="mailto:?subject={{ .Title }}&amp;body={{ .Permalink }}"
+    <a href="mailto:?subject={{ $summary }}&body={{ .Permalink }}"
        target="_self"
       rel="noopener"
     >
@@ -39,7 +41,7 @@
     </a>
   </li>
   <li class="telegram">
-    <a href="https://telegram.me/share/url?url={{ .Permalink }}&text={{ .Title }}%20on%20Uptime%20Ventures"
+    <a href="https://telegram.me/share/url?url={{ .Permalink }}&text={{ $summary }}"
        target="_blank"
        rel="noopener"
     >
@@ -51,7 +53,7 @@
     </a>
   </li>
   <li class="whatsapp">
-    <a href="whatsapp://send?text={{ .Title }} on Uptime Ventures: {{ .Permalink }}"
+    <a href="whatsapp://send?text={{ $summary }}:%20{{ .Permalink }}"
        target="_blank"
        rel="noopener"
     >
@@ -64,7 +66,7 @@
     </a>
   </li>
   <li class="linkedin">
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink }}&amp;summary={{ .Title }} on Uptime Ventures&amp;source={{ .Site.Params.baseUrl }}"
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&summary={{ $summary }}&source={{ .Site.Params.baseUrl }}"
        target="_blank"
        rel="noopener"
     >

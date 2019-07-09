@@ -407,7 +407,7 @@ body.single main article.post .post-meta span.links {
 }
 
 ul.share-buttons {
-  font-size: .9em;
+  font-size: .8em;
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 2em;
@@ -427,7 +427,7 @@ ul.share-buttons li {
 ul.share-buttons a {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
   color: white;
   text-decoration: none;
 }
