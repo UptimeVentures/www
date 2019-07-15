@@ -259,6 +259,7 @@ body.home ul.shortlist {
 }
 
 body.home ul.shortlist li {
+  width: 33.3%;
   margin-right: 1.5em;
 }
 
@@ -505,6 +506,7 @@ ul.share-buttons li.linkedin:hover {
   body.home ul.shortlist li {
     margin-right: 0;
     margin-bottom: 1.5em;
+    width: 100%;
   }
 
   body.home ul.shortlist li:last-child {
