@@ -41,6 +41,12 @@
   {{- end }}
 </head>
 <body class="{{if eq .Kind `page` }}single{{else}}list{{ if .IsHome }} home{{ end }}{{end}}">
+  {{ if .IsHome }}
+    {{ partial "shutdown.html" . }}
+  {{ end }}
+  {{ if eq .Kind `page` }}
+    {{ partial "shutdown.html" . }}
+  {{ end }}
   <header class="main">
     <a href="{{ .Site.BaseURL }}" class="title" aria-label="Uptime Ventures">
       {{ if .IsHome }}
